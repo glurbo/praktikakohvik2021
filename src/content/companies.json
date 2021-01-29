@@ -1,0 +1,38 @@
+[
+    { 
+        "company": {
+        "name": "firma 1",
+        "about": "b1",
+        "image": "c1"
+        }
+    },
+    { 
+        "company": {
+        "name": "firma 2",
+        "about": "b2",
+        "image": "c2"
+        }
+    },
+    { 
+        "company": {
+        "name": "firma 3",
+        "about": "b3",
+        "image": "c3"
+        }
+    },
+    { 
+        "company": {
+        "name": "firma 4",
+        "about": "b4",
+        "image": "c4"
+        }
+    },
+    { 
+        "company": {
+        "name": "firma 5",
+        "about": "b5",
+        "image": "c5"
+        }
+    }
+
+]

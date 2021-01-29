@@ -1,13 +1,13 @@
 import * as React from "react"
 import Layout from "../components/common/layout/layout"
-import Header from "../components/sections/header"
+import Form from "../components/sections/form"
 
-const IndexPage = () => (
+const FormPage = () => (
   <Layout>
-    <Header/>
+    <Form/>
     <div>Hello World!</div>
   </Layout>
   
 )
 
-export default IndexPage
+export default FormPage
