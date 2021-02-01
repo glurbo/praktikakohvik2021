@@ -2,7 +2,6 @@ import * as React from "react"
 import Layout from "../components/common/layout/layout"
 import Form from "../components/sections/form"
 
-import React from "react"
 
 export default class FormPage extends React.Component {
   state = {
