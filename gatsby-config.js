@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Praktikakohvik2021`,
+    title: `Praktikakohvik 2021`,
+    description: `TalTech Praktikakohvik 2021 Discordis`,
+    author: `Germo Linder`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
@@ -22,7 +24,14 @@ module.exports = {
         ignore: [`**/\.*`], // ignore files starting with a dot
       },
     },
-
-    
+    `gatsby-plugin-recaptcha`,
+    {
+      resolve: `gatsby-plugin-recaptcha`,
+      options: {
+         async: false,
+         defer: false,
+         args: `?onload=onloadCallback&render=6Lda10UaAAAAAO6CbkZsichV5pPiDwxjDY58ZHE7`,
+      },
+   },
   ],
 };
