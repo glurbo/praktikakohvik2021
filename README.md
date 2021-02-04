@@ -1,4 +1,4 @@
-### Praktikakohvik 2020
+### Praktikakohvik 2021
 
 install Gatsby CLI - [more info](https://www.gatsbyjs.org/tutorial/part-zero/)
 ```sh
