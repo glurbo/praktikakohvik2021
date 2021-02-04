@@ -120,6 +120,34 @@ export const Mobile = styled.div`
   `}
 `
 
+const HeaderButton = styled.button`
+  font-weight: 700;
+  font-size: 12px;
+  color: ${props => props.theme.color.primary};
+  letter-spacing: 1px;
+  height: 42px;
+  display: block;
+  text-transform: uppercase;
+  cursor: pointer;
+  white-space: nowrap;
+  background: ${props => props.theme.color.background.white};
+  padding: 0px 35px;
+  border-width: 1px;
+  border-radius: 25px;
+  border-style: solid;
+  border-color: ${props => props.theme.color.primary};
+  border-image: initial;
+  outline: 0px;
+  &:hover {
+    box-shadow: rgba(110, 120, 152, 0.22) 0px 2px 10px 0px;
+  }
+  @media (max-width: ${props => props.theme.screen.md}) {
+  }
+  @media (max-width: ${props => props.theme.screen.sm}) {
+    margin-left: 0;
+  }
+`
+
 // Background blur info
 // background-color: ${props => props.scrolled && `rgba(245, 245, 250, .8`};
 // box-shadow:  ${props =>

@@ -1,22 +1,29 @@
 import React, { useCallback, useState }  from "react"
-import axios from "axios"
 import styled from "styled-components"
-import { Form, Button, Container, Row, Col } from "react-bootstrap"
+import { Form, Button, Row, Col } from "react-bootstrap"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import ReCAPTCHA from "react-google-recaptcha"
+import * as Yup from 'yup';
+import { Container, Section} from "../global"
 
 const FormSection = () => {
   
   const [disableSubmit,setDisableSubmit] = useState(true);
 
-  
-
   return (
-    <div>
+    <Section id="form">
       <Container>
         <Row>
           <Col md={6}>
-            <Form method="POST" action="https://getform.io/f/e92cda47-d128-4f1c-b7f0-a69e09fadd73">
+            <Form validationSchema={Yup.object().shape({
+                    Nimi: Yup.string().required('Full name field is required'),
+                    Email: Yup.string()
+                      .email('Invalid email')
+                      .required('Email field is required'),
+                    Recaptcha: Yup.string().required('Robots are not welcome yet!'),
+                  })}
+                  method="POST" 
+                  action="https://getform.io/f/e92cda47-d128-4f1c-b7f0-a69e09fadd73">
               <Form.Group controlId="formBasicName">
                 <Form.Label>Nimi</Form.Label>
                 <Form.Control name="Nimi" required size="lg" type="text" placeholder="Sisesta nimi"/>
@@ -26,6 +33,7 @@ const FormSection = () => {
                 <Form.Control name="Email" required size="lg" type="email" placeholder="Sisesta email"/>
               </Form.Group>
               <ReCAPTCHA 
+                name="Recaptcha"
                 sitekey="6Lda10UaAAAAAO6CbkZsichV5pPiDwxjDY58ZHE7" 
                 onChange={useCallback(() => setDisableSubmit(false))}
               />
@@ -37,7 +45,7 @@ const FormSection = () => {
         <Success>Täname registreerimast!</Success>
       </Container>
         
-    </div>
+    </Section>
         
   );
 };
