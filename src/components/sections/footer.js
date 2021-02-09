@@ -1,7 +1,11 @@
 import React from "react"
 import styled from "styled-components"
-
-import { Container } from "../global"
+import { Container, Row, Col } from "react-bootstrap"
+//import { Container } from "../global"
+import fb from "../../images/facebook-logo.svg"
+import ig from "../../images/instagram.svg"
+import ituk from "../../images/ituk.svg"
+import ituk_taltech_logo from "../../images/ituktaltechlogo.svg"
 
 const Footer = () => {
 
@@ -9,47 +13,30 @@ const Footer = () => {
   <FooterWrapper id="footer">
     <FooterColumnContainer>
 
-      <FooterColumn>
+      <Row>
+        <Col align-items="center">
+          <img src={ituk_taltech_logo}/>
+        </Col>
 
-        <ImageWrapper>
-          
-        </ImageWrapper>
+        <Col>
+          <Row>
+            <div>test</div>
+          </Row>
+          <Row>
+            <div>test</div>
+          </Row>
+        </Col>
 
-        <Link href="https://www.ttu.ee/asutused/itcollege/" target="_blank"><TalTechSpan>TalTech IT Kolledž</TalTechSpan></Link> <br />
-        <Link href="https://www.ttu.ee/teaduskond/infotehnoloogia-teaduskond/" target="_blank"><TalTechSpan>TalTech IT-teaduskond</TalTechSpan></Link>
-        <SocialList>
-          <li>
-            <a href="https://www.facebook.com/ituk.ttu/" target="_blank" rel="noopener noreferrer">
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/ituk.taltech/" target="_blank" rel="noopener noreferrer">
-            </a>
-          </li>
-          <li>
-            <a href="https://ituk.ee/" target="_blank" rel="noopener noreferrer">
-              
-            </a>
-          </li>
-        </SocialList>
-      </FooterColumn>
-
-      <ContactColumn>
-        <span>Kontaktid</span>
-        <div>
-          <span>Mektory <br/> Raja 15, Tallinn</span>
-        </div>
-        <div>
-          <span><Link href="mailto:kontakt@ituk.ee">kontakt@ituk.ee</Link></span>
-        </div>
-        <div>
-          <span>5331 1997</span>
-        </div>
-      </ContactColumn>
+        <Col>
+          <img src={fb} width="50"/>
+          <img src={ig} width="50"/>
+          <img src={ituk} width="50"/>
+        </Col>
+      </Row>
 
     </FooterColumnContainer>
     <Copyright>
-      © 2020 ITÜK. All rights reserved.
+      © {new Date().getFullYear()} ITÜK. All rights reserved.
     </Copyright>
   </FooterWrapper>
   )
@@ -71,7 +58,6 @@ const Copyright = styled.span`
 `
 
 const FooterColumnContainer = styled(Container)`
-  display: flex;
   justify-content: space-between;
   margin-top: 50px;
   border-bottom-style: solid;
@@ -117,10 +103,6 @@ const StyledImage = styled.img`
   @media (max-width: ${props => props.theme.screen.xs}) {
     width: 100%;
   }
-`
-
-const SocialImage = styled.img`
-  width: 29px;
 `
 
 const SocialList = styled.ul`

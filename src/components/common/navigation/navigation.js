@@ -4,6 +4,7 @@ import Scrollspy from "react-scrollspy"
 import { Menu, X } from "react-feather"
 import styled from "styled-components"
 import { Container } from "../../global"
+import { Link } from 'gatsby'
 import {
   Nav,
   NavItem,
@@ -96,11 +97,14 @@ export default class Navigation extends Component {
 
           <Mobile hide>{this.getNavList({})}</Mobile>
           <ActionsContainer>
-            <Link href="form">
+            <Link to="/guide/" text-decoration="none">
+              <HeaderButton >Discordi juhend</HeaderButton>
+            </Link>
+          </ActionsContainer>
+          <ActionsContainer>
+            <Link to="/form/" text-decoration="none">
               <HeaderButton >Registreerimine</HeaderButton>
             </Link>
-            
-          
           </ActionsContainer>
         </StyledContainer>
         <Mobile>
@@ -116,9 +120,6 @@ export default class Navigation extends Component {
 }
 
 
-const Link = styled.a`
-text-decoration = none;
-`
 
 const HeaderButton = styled.button`
   font-weight: 700;

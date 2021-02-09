@@ -94,8 +94,8 @@ export const ActionsContainer = styled.div`
     font-family: ${props => props.theme.font.normal};
     ${props => props.theme.font_size.xsmall};
     color: white;
-    background: #098b8c;
-    border-radius: 4px;
+    background: #4c3b8e;
+    border-radius: 15px;
     padding: 10px 16px;
     text-transform: uppercase;
     font-size: 12px;
