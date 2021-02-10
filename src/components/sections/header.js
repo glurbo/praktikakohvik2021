@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { graphql, useStaticQuery } from "gatsby"
-import Banner from "../../images/banner.jpg"
+import Banner from "../../images/jpg/banner.jpg"
 
 import { Container } from "../global"
 

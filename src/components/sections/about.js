@@ -19,7 +19,10 @@ const About = () => {
             CV koostamise nõuanded ja info kandideerimise kohta. Kirjuta vihikusse küsimused juba ette,
             ning tee vestluse jooksul olulisi märkmeid, et kandideerimisel läheks kõik sujuvalt.</p>
         </div>
+        
       </AboutContainer>
+
+      
     </Container>
   </Section>
   )
