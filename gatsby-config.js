@@ -49,6 +49,14 @@ module.exports = {
          args: `?onload=onloadCallback&render=6Lda10UaAAAAAO6CbkZsichV5pPiDwxjDY58ZHE7`,
       },
    },
+   {
+    resolve: `gatsby-plugin-google-fonts`,
+    options: {
+      fonts: [
+      ],
+      display: 'swap'
+    }
+  }
    
   
   ],

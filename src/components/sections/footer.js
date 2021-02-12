@@ -44,7 +44,7 @@ const Footer = () => {
           <ContactColumn>
             <div>
               <img src={data.image6.publicURL}/>
-              <span>kontakt@ituk.ee</span>
+              <span><Link href="mailto:kontakt@ituk.ee">kontakt@ituk.ee</Link></span>
             </div>
             <br/>
             <div>
@@ -129,6 +129,7 @@ const FooterColumn = styled.div`
 `
 
 const Link = styled.a`
+display: inline-block;
   ${props => props.theme.font.primary};
   color: ${props => props.theme.color.white.lessdark};
   text-decoration: none;
