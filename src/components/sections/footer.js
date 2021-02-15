@@ -3,6 +3,7 @@ import styled from "styled-components"
 import { Container, Row, Col } from "react-bootstrap"
 //import { Container } from "../global"
 import {graphql, useStaticQuery} from "gatsby";
+import { textSpanEnd } from "typescript";
 
 const Footer = () => {
 
@@ -56,9 +57,15 @@ const Footer = () => {
 
         <FooterCol>
           <SocialList>
-            <Image src={data.image2.publicURL}/>
-            <Image src={data.image3.publicURL}/>
-            <Image src={data.image4.publicURL}/>
+            <a href="https://www.facebook.com/ituk.taltech" target="_blank">
+              <Image src={data.image2.publicURL} alt="facebook svg"/>
+            </a>
+            <a href="https://www.instagram.com/ituk.taltech/" target="_blank">
+              <Image src={data.image3.publicURL} alt="instagram svg"/>
+            </a>
+            <a href="https://ituk.ee/" target="_blank">
+              <Image src={data.image4.publicURL} alt="ituk svg"/>
+            </a>
           </SocialList>
           
         </FooterCol>
@@ -90,6 +97,8 @@ const FooterWrapper = styled.footer`
   padding: 0 0 20px;
   display: flex;
   flex-direction: column;
+  border-top: 5px solid;
+  border-image: linear-gradient(to right, ${props => props.theme.color.secondary}, ${props => props.theme.color.tertiary} ) 1;
 `
 
 const Copyright = styled.span`
@@ -129,7 +138,6 @@ const FooterColumn = styled.div`
 `
 
 const Link = styled.a`
-display: inline-block;
   ${props => props.theme.font.primary};
   color: ${props => props.theme.color.white.lessdark};
   text-decoration: none;
@@ -166,10 +174,6 @@ const SocialList = styled.ul`
     width: 120px;
     
   }
-`
-
-const TalTechSpan = styled.span`
-  line-height: 30px;
 `
 
 const ContactColumn = styled.div`

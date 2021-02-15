@@ -2,14 +2,15 @@
 
 const theme = {
   font: {
-    primary: `'HK Grotesk Normal'`,
-    secondary: `'HK Grotesk Medium'`,
-    light: `'HK Grotesk Light'`,
-    normal: `'HK Grotesk Normal'`,
-    medium: `'HK Grotesk Medium'`,
-    semibold: `'HK Grotesk Semibold'`,
-    bold: `'HK Grotesk Bold'`,
-    extrabold: `'HK Grotesk Extra Bold'`,
+    primary: "font-family: Poppins; font-weight: 300;",
+    secondary: "font-family: Poppins; font-weight: 300;",
+    tertiary: "font-family: Poppins; font-weight: 300;",
+    light: "font-family: Poppins; font-weight: 300;",
+    normal: "font-family: Poppins; font-weight: 300;",
+    medium: "font-family: Poppins; font-weight: 300;",
+    semibold: "font-family: Poppins; font-weight: 300;",
+    bold: "font-family: Poppins; font-weight: 300;",
+    extrabold: "font-family: Poppins; font-weight: 300;",
   },
   font_size: {
     xxxsmall: "font-size: 12px;",

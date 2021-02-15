@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 
-import { Section, Container, BackgroundTitle, SectionTitle } from "../global"
+import { Section, Container, SectionTitle } from "../global"
 import { graphql, useStaticQuery } from "gatsby";
 
 const Companies = () => {
@@ -67,7 +67,6 @@ const Companies = () => {
     return (
       <Section id="firmad">
         <Container>
-          <BackgroundTitle>KES ON KOHAL?</BackgroundTitle>
           <SectionTitle>Kes on kohal?</SectionTitle>
           <Flex>
             <ContainerItem>

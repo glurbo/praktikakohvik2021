@@ -10,6 +10,9 @@ export const Nav = styled.nav`
   z-index: 1000;
   background: ${props => (props.scrolled ? `white` : null)};
   transition: 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  
+  border-bottom: 5px solid;
+  border-image: linear-gradient(to right, ${props => props.theme.color.secondary}, ${props => props.theme.color.tertiary} ) 1;
 `
 
 export const StyledContainer = styled(Container)`
@@ -120,7 +123,7 @@ export const Mobile = styled.div`
   `}
 `
 
-const HeaderButton = styled.button`
+export const HeaderButton = styled.button`
   font-weight: 700;
   font-size: 12px;
   color: ${props => props.theme.color.primary};
