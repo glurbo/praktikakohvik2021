@@ -40,6 +40,11 @@ const HeaderWrapper = styled.header`
 `
 
 const HeaderTextGroup = styled.div`
+  border: 5px solid;
+  border-radius: 25px;
+  border-image: linear-gradient(to right, ${props => props.theme.color.secondary}, ${props => props.theme.color.tertiary} ) 1;
+
+  padding: 15px;
   margin: 0;
 
   > a {
@@ -59,7 +64,6 @@ const HeaderTextGroup = styled.div`
     margin: 0 0 13px;
     color: ${props => props.theme.color.primary};
     font-size: 45px;
-    ${props => props.theme.font.extrabold};
     @media (max-width: ${props => props.theme.screen.sm}) {
       ${props => props.theme.font_size.larger};
     }
@@ -86,7 +90,7 @@ const HeaderTextGroup = styled.div`
     display: block;
     margin-bottom: 24px;
     max-width: 350px;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 26px;
     ${props => props.theme.font.quadrary};
   }  

@@ -9,8 +9,8 @@ const theme = {
     normal: "font-family: Poppins; font-weight: 300;",
     medium: "font-family: Poppins; font-weight: 300;",
     semibold: "font-family: Poppins; font-weight: 300;",
-    bold: "font-family: Poppins; font-weight: 300;",
-    extrabold: "font-family: Poppins; font-weight: 300;",
+    bold: "font-family: Poppins; font-weight: 500;",
+    extrabold: "font-family: Poppins; font-weight: 700;",
   },
   font_size: {
     xxxsmall: "font-size: 12px;",

@@ -48,6 +48,12 @@ const GlobalStyles = createGlobalStyle`
 
   }
 
+  a:visited { text-decoration: none; }
+  a:hover { text-decoration: none; }
+  a:focus { text-decoration: none; }
+  a:hover, a:active { text-decoration: none; }
+
+
   input {
     font-family: ${props => props.theme.font.normal};
   }

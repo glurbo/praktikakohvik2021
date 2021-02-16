@@ -99,6 +99,7 @@ const MyForm = () => {
 
   const Success = styled.div`
   font-weight: bold;
+  color: #488f5b;
   background: #E1F8ED;
   padding: 20px;
   margin-top: 16px;

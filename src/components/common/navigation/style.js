@@ -2,16 +2,23 @@ import styled from "styled-components"
 
 import { Container } from "../../global"
 
+export const Title = styled.span`
+  color: black;
+  font-size: 30px;
+  letter-spacing: 5px;
+`
+
 export const Nav = styled.nav`
   padding: ${props => (props.scrolled ? `16px 0` : `24px 0`)};
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 1000;
-  background: ${props => (props.scrolled ? `white` : null)};
+  background: ${props => (props.scrolled ? props.theme.color.primary : "white")};
   transition: 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
   
-  border-bottom: 5px solid;
+  border-bottom: 5px ${props => (props.scrolled ? "solid" : "transparent")};
+  transition: border-bottom 0.25s, background 0.25s, padding 0.25s;
   border-image: linear-gradient(to right, ${props => props.theme.color.secondary}, ${props => props.theme.color.tertiary} ) 1;
 `
 
@@ -143,6 +150,7 @@ export const HeaderButton = styled.button`
   outline: 0px;
   &:hover {
     box-shadow: rgba(110, 120, 152, 0.22) 0px 2px 10px 0px;
+    background:  linear-gradient(to right, ${props => props.theme.color.secondary}, ${props => props.theme.color.tertiary} ) 1;
   }
   @media (max-width: ${props => props.theme.screen.md}) {
   }

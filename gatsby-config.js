@@ -56,7 +56,26 @@ module.exports = {
       ],
       display: 'swap'
     }
-  }
+  },
+  {
+    resolve: `gatsby-plugin-prefetch-google-fonts`,
+    options: {
+      fonts: [
+        {
+          family: `Poppins`,
+          variants: [`300`, `400`, `500`, `700`],
+        },
+        {
+          family: `Lato`,
+          variants: [`400`, `700`],
+        },
+        {
+          family: `Montserrat`,
+          variants: [`400`, `600`],
+        },
+      ],
+    },
+  },
   
    
   

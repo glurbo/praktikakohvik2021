@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { Container, Row, Col } from "react-bootstrap"
 //import { Container } from "../global"
 import {graphql, useStaticQuery} from "gatsby";
-import { textSpanEnd } from "typescript";
+import { Link } from 'gatsby'
 
 const Footer = () => {
 
@@ -45,7 +45,7 @@ const Footer = () => {
           <ContactColumn>
             <div>
               <img src={data.image6.publicURL}/>
-              <span><Link href="mailto:kontakt@ituk.ee">kontakt@ituk.ee</Link></span>
+              <span><Link href="mailto:kontakt@ituk.ee"><span>kontakt@ituk.ee</span></Link></span>
             </div>
             <br/>
             <div>
@@ -78,6 +78,7 @@ const Footer = () => {
   </FooterWrapper>
   )
 }
+
 
 const Image = styled.img`
 width: 40;
@@ -137,11 +138,6 @@ const FooterColumn = styled.div`
   }
 `
 
-const Link = styled.a`
-  ${props => props.theme.font.primary};
-  color: ${props => props.theme.color.white.lessdark};
-  text-decoration: none;
-`
 
 const ImageWrapper = styled.div`
   margin-bottom: 27px;
@@ -181,7 +177,6 @@ const ContactColumn = styled.div`
   margin: auto;
   span {
     font-size: 26px;
-    ${props => props.theme.font.normal};
     color: ${props => props.theme.color.white.regular};
   }
   div {
@@ -191,8 +186,7 @@ const ContactColumn = styled.div`
     justify-content: space-between;
     span {
       width: 200px;
-      font-size: 16px;
-      ${props => props.theme.font.primary};
+      font-size: 20px;
       color: ${props => props.theme.color.white.lessdark};
     }
   }
@@ -209,13 +203,6 @@ const ContactColumn = styled.div`
     span {
       font-size: 20px;
     }
-  }
-`
-
-const ContactImage = styled.img`
-  width: 25px;
-  @media (max-width: ${props => props.theme.screen.xs}) { 
-    width: 23px;    
   }
 `
 

@@ -5,7 +5,7 @@ import { Menu, X } from "react-feather"
 import styled from "styled-components"
 import { Container } from "../../global"
 import { Link } from 'gatsby'
-import { Container, Row, Col } from "react-bootstrap"
+import { Row, Col } from "react-bootstrap"
 import {
   Nav,
   NavItem,
@@ -15,10 +15,11 @@ import {
   MobileMenu,
   Mobile,
   ActionsContainer,
-  HeaderButton
+  HeaderButton,
+  Title
 } from "./style"
 
-const NAV_ITEMS = ["DISCORDI JUHEND", "REGISTREERIMINE", ""]
+const NAV_ITEMS = ["DISCORDI_JUHEND", "REGISTREERIMINE", ""]
 
 export default class Navigation extends Component {
   state = {
@@ -51,9 +52,9 @@ export default class Navigation extends Component {
   }
 
   getNavLink = item => (
-    <AnchorLink href={`#${item.toLowerCase()}`} onClick={this.closeMobileMenu}>
-      {item}
-    </AnchorLink>
+    <Link to={`/${item.toLowerCase()}/`} onClick={this.closeMobileMenu}>
+      {item.replace("_", " ")}
+    </Link>
   )
 
   getNavList = ({ mobile = false }) => (
@@ -76,35 +77,50 @@ export default class Navigation extends Component {
 
     return (
       <Nav {...this.props} scrolled={this.state.hasScrolled}>
-          <StyledContainer>
-          <Brand>
-            <Link to="/" onClick={this.closeMobileMenu}>
-              PRAKTIKAKOHVIK 2021
-            </Link>
-          </Brand>
-          <Mobile>
-            <button
-              onClick={this.toggleMobileMenu}
-              style={{ color: "black", background: "none" }}
-            >
-              {this.state.mobileMenuOpen ? (
-                <X size={24} alt="close menu" />
-              ) : (
-                <Menu size={24} alt="open menu" />
-              )}
-            </button>
-          </Mobile>
+        <StyledContainer>
 
-          <ActionsContainer>
-            <Link to="/guide/" text-decoration="none">
-              <HeaderButton >Discordi juhend</HeaderButton>
-            </Link>
-          </ActionsContainer>
-          <ActionsContainer>
-            <Link to="/form/" text-decoration="none">
-              <HeaderButton >Registreerimine</HeaderButton>
-            </Link>
-          </ActionsContainer>
+
+
+                <Brand>
+                  <Link to="/" onClick={this.closeMobileMenu}>
+                    <Title>
+                      PRAKTIKAKOHVIK 
+                      <br />
+                      2021
+                    </Title>
+                  </Link>
+                </Brand>
+
+
+                <Mobile>
+                  <button
+                    onClick={this.toggleMobileMenu}
+                    style={{ color: "black", background: "none" }}
+                  >
+                    {this.state.mobileMenuOpen ? (
+                      <X size={24} alt="close menu" />
+                    ) : (
+                      <Menu size={24} alt="open menu" />
+                    )}
+                  </button>
+                </Mobile>
+              
+              
+                <ActionsContainer>
+                  <Link to="/discordi_juhend/" style={{textDecoration: 'none'}}>
+                    <HeaderButton >Discordi juhend</HeaderButton>
+                  </Link>
+                </ActionsContainer>
+                <ActionsContainer>
+                  <Link to="/registreerimine/" style={{textDecoration: 'none'}}>
+                    <HeaderButton >Registreerimine</HeaderButton>
+                  </Link>
+                </ActionsContainer>
+                    
+
+                    
+
+                    
         </StyledContainer>
 
         <Mobile>
