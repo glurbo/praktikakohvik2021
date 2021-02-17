@@ -49,33 +49,7 @@ module.exports = {
          args: `?onload=onloadCallback&render=6Lda10UaAAAAAO6CbkZsichV5pPiDwxjDY58ZHE7`,
       },
    },
-   {
-    resolve: `gatsby-plugin-google-fonts`,
-    options: {
-      fonts: [
-      ],
-      display: 'swap'
-    }
-  },
-  {
-    resolve: `gatsby-plugin-prefetch-google-fonts`,
-    options: {
-      fonts: [
-        {
-          family: `Poppins`,
-          variants: [`300`, `400`, `500`, `700`],
-        },
-        {
-          family: `Lato`,
-          variants: [`400`, `700`],
-        },
-        {
-          family: `Montserrat`,
-          variants: [`400`, `600`],
-        },
-      ],
-    },
-  },
+  
   
    
   

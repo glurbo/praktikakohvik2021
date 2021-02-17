@@ -1,13 +1,13 @@
 import React from "react"
 import styled from "styled-components"
 
-import { Section, Container, BackgroundTitle, SectionTitle } from "../global"
+import { Section, Container } from "../global"
 
 const Questions = () => (
   <Section id="küsimused">
-    <StyledContainer>
-      <BackgroundTitle>MÕISTLIK KÜSIDA</BackgroundTitle>
-      <SectionTitle>Mida küsida?</SectionTitle>
+    <Container>
+      <div>MÕISTLIK KÜSIDA</div>
+      <div>Mida küsida?</div>
       <SubText>Enne üritusele tulemist on mõistlik ette valmistada mõned küsimused <br />
         tööandjatele. Siin on mõned näited.</SubText>
 
@@ -20,13 +20,11 @@ const Questions = () => (
         <li>Kui paindlik on tudengina tööl käimise juures graafik või koormus?</li>
         <li>Mis on ettevõttes arenemisvõimalused? Kas pakutakse mingeid lisakoolitusi?</li>
       </List>
-    </StyledContainer>
+    </Container>
   </Section>
 )
 
 export default Questions
-
-const StyledContainer = styled(Container)``
 
 const List = styled.ul`
   margin: 20px auto;
