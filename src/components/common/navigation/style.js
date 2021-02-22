@@ -3,9 +3,19 @@ import styled from "styled-components"
 import { Container } from "../../global"
 
 export const Title = styled.span`
-  color: black;
+  color: white;
   font-size: 30px;
   letter-spacing: 5px;
+  @media (max-width: ${props => props.theme.screen.xs}) {
+    font-size: 100%
+  }
+  -webkit-text-stroke: 1px black;
+  text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
 `
 
 export const Nav = styled.nav`
@@ -14,19 +24,57 @@ export const Nav = styled.nav`
   width: 100%;
   top: 0;
   z-index: 1000;
-  background: ${props => (props.scrolled ? props.theme.color.primary : "white")};
+  background: ${props => props.theme.color.primary};
+  
   transition: 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
   
-  border-bottom: 5px ${props => (props.scrolled ? "solid" : "transparent")};
+  border-bottom: 5px solid;
   transition: border-bottom 0.25s, background 0.25s, padding 0.25s;
   border-image: linear-gradient(to right, ${props => props.theme.color.secondary}, ${props => props.theme.color.tertiary} ) 1;
 `
+// border-bottom: 5px ${props => (props.scrolled ? "solid" : "transparent")};
+// background: ${props => (props.scrolled ? props.theme.color.primary : "white")};
 
-export const StyledContainer = styled(Container)`
+
+export const MobileButton = styled.button`
+  color: ${props => props.theme.color.tertiary};
+  background: none;
+
+`
+
+export const MobileMenuItem = styled.div`
+  color: ${props => (props.scrolled ? props.theme.color.primary : "white")};
+  font-family: ${props => props.theme.font.extrabold};
+  font-size: 18px;
+  letter-spacing: 1px;
+  -webkit-text-stroke: 1px black;
+`
+
+/*export const StyledContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
   align-items: center;
+`*/
+
+export const StyledContainer = styled(Container)`
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
 `
+
+export const Flex = styled.div`
+  display: grid;
+  grid-auto-flow: column;
+  justify-items: stretch;
+  justify-content: space-between;
+  align-content: center;
+  grid-template-columns: 1fr 1fr;
+  @media (max-width: ${props => props.theme.screen.md}) {
+    grid-template-columns: 1fr;
+  }
+`
+
 
 export const NavListWrapper = styled.div`
   ul {
@@ -81,6 +129,9 @@ export const Brand = styled.div`
   color: ${props => props.theme.color.black.regular};
   text-decoration: none;
   letter-spacing: 1px;
+  @media (max-width: ${props => props.theme.screen.xs}) {
+    width: 80%;
+  }
   margin: 0;
   ul {
     list-style: none;
@@ -99,17 +150,45 @@ export const ActionsContainer = styled.div`
   @media (max-width: ${props => props.theme.screen.xs}) {
     display: none;
   }
+`
 
-  button {
-    font-family: ${props => props.theme.font.normal};
-    ${props => props.theme.font_size.xsmall};
-    color: white;
-    background: #4c3b8e;
-    border-radius: 15px;
-    padding: 10px 16px;
-    text-transform: uppercase;
-    font-size: 12px;
+
+export const HeaderButton = styled.button`
+  
+  font-family: ${props => props.theme.font.normal};
+  ${props => props.theme.font_size.xsmall};
+  
+  border-radius: 20px;
+  padding: 10px 16px;
+  font-size: 12px;
+  height: 42px;
+  display: block;
+  text-transform: uppercase;
+  cursor: pointer;
+  white-space: nowrap;
+  background: ${props => (props.scrolled ? "white" : props.theme.color.primary)};
+  margin: 0 10px;
+  &:hover {
+    box-shadow: rgba(110, 120, 152, 0.22) 0px 2px 10px 0px;
+    background: ${props => props.theme.color.tertiary};
   }
+  @media (max-width: ${props => props.theme.screen.md}) {
+  }
+  @media (max-width: ${props => props.theme.screen.sm}) {
+    margin-left: 0;
+  }
+`
+
+export const activeStyles = {
+  background: `${props => props.theme.color.tertiary}`,
+  color: 'black'
+  }
+
+export const HeaderButtonText = styled.span`
+  color: white;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 1px;
 `
 
 export const Mobile = styled.div`
@@ -128,35 +207,6 @@ export const Mobile = styled.div`
       display: none;
     }
   `}
-`
-
-export const HeaderButton = styled.button`
-  font-weight: 700;
-  font-size: 12px;
-  color: ${props => props.theme.color.primary};
-  letter-spacing: 1px;
-  height: 42px;
-  display: block;
-  text-transform: uppercase;
-  cursor: pointer;
-  white-space: nowrap;
-  background: ${props => props.theme.color.background.white};
-  padding: 0px 35px;
-  border-width: 1px;
-  border-radius: 25px;
-  border-style: solid;
-  border-color: ${props => props.theme.color.primary};
-  border-image: initial;
-  outline: 0px;
-  &:hover {
-    box-shadow: rgba(110, 120, 152, 0.22) 0px 2px 10px 0px;
-    background:  linear-gradient(to right, ${props => props.theme.color.secondary}, ${props => props.theme.color.tertiary} ) 1;
-  }
-  @media (max-width: ${props => props.theme.screen.md}) {
-  }
-  @media (max-width: ${props => props.theme.screen.sm}) {
-    margin-left: 0;
-  }
 `
 
 // Background blur info

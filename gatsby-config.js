@@ -36,8 +36,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `jpg`,
-        path: `${__dirname}/src/images/jpg`,
+        name: `png`,
+        path: `${__dirname}/src/images/png`,
       },
     },
     `gatsby-plugin-recaptcha`,
@@ -49,7 +49,17 @@ module.exports = {
          args: `?onload=onloadCallback&render=6Lda10UaAAAAAO6CbkZsichV5pPiDwxjDY58ZHE7`,
       },
    },
-  
+   {
+    resolve: `gatsby-plugin-google-fonts`,
+    options: {
+      fonts: [
+        `Poppins\:300,400,500,700`,
+        `Lato\:400,700`,
+        `Montserrat\:400,600`
+      ],
+      display: 'swap'
+    }
+  },
   
    
   

@@ -38,18 +38,18 @@ const Footer = () => {
 
       <Row>
         <FooterCol >
-          <img src={data.image1.publicURL} width="330" margin="auto"/>
+          <SchoolLogoImage src={data.image1.publicURL} width="330" margin="auto"/>
         </FooterCol>
 
         <FooterCol>
           <ContactColumn>
             <div>
-              <img src={data.image6.publicURL}/>
+              <img src={data.image6.publicURL} alt="mail svg"/>
               <span><Link href="mailto:kontakt@ituk.ee"><span>kontakt@ituk.ee</span></Link></span>
             </div>
             <br/>
             <div>
-              <img src={data.image5.publicURL}/>
+              <img src={data.image5.publicURL} alt="geo svg"/>
               <span>Akadeemia tee 15a, ICT-361</span>
             </div>
           </ContactColumn>
@@ -57,13 +57,13 @@ const Footer = () => {
 
         <FooterCol>
           <SocialList>
-            <a href="https://www.facebook.com/ituk.taltech" target="_blank">
+            <a href="https://www.facebook.com/ituk.taltech" target="_blank" rel="noreferrer">
               <Image src={data.image2.publicURL} alt="facebook svg"/>
             </a>
-            <a href="https://www.instagram.com/ituk.taltech/" target="_blank">
+            <a href="https://www.instagram.com/ituk.taltech/" target="_blank" rel="noreferrer">
               <Image src={data.image3.publicURL} alt="instagram svg"/>
             </a>
-            <a href="https://ituk.ee/" target="_blank">
+            <a href="https://ituk.ee/" target="_blank" rel="noreferrer">
               <Image src={data.image4.publicURL} alt="ituk svg"/>
             </a>
           </SocialList>
@@ -79,6 +79,14 @@ const Footer = () => {
   )
 }
 
+
+const SchoolLogoImage = styled.img`
+  @media (max-width: ${props => props.theme.screen.sm}) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+`
 
 const Image = styled.img`
 width: 40;
@@ -118,38 +126,6 @@ const FooterColumnContainer = styled(Container)`
   border-bottom-color: ${props => props.theme.color.white.lessdark};
   @media (max-width: ${props => props.theme.screen.xs}) {
     justify-content: space-between;
-  }
-`
-
-const FooterColumn = styled.div`
-  max-width: 250px;
-  span {
-    font-size: 17px;
-    ${props => props.theme.font.regular};
-    color: ${props => props.theme.color.white.lessdark};
-  }
-  
-  @media (max-width: ${props => props.theme.screen.xs}) {
-    width: 47%;
-    
-    span {
-      font-size: 15px;
-    } 
-  }
-`
-
-
-const ImageWrapper = styled.div`
-  margin-bottom: 27px;
-`
-
-const StyledImage = styled.img`
-  width: 250px;
-  @media (max-width: ${props => props.theme.screen.md}) {
-    width: 220px;
-  }
-  @media (max-width: ${props => props.theme.screen.xs}) {
-    width: 100%;
   }
 `
 

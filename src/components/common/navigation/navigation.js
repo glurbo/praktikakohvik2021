@@ -1,11 +1,8 @@
 import React, { Component } from "react"
-import AnchorLink from "react-anchor-link-smooth-scroll"
 import Scrollspy from "react-scrollspy"
 import { Menu, X } from "react-feather"
-import styled from "styled-components"
 import { Container } from "../../global"
 import { Link } from 'gatsby'
-import { Row, Col } from "react-bootstrap"
 import {
   Nav,
   NavItem,
@@ -16,7 +13,11 @@ import {
   Mobile,
   ActionsContainer,
   HeaderButton,
-  Title
+  Title,
+  MobileButton,
+  MobileMenuItem,
+  HeaderButtonText,
+  activeStyles
 } from "./style"
 
 const NAV_ITEMS = ["DISCORDI_JUHEND", "REGISTREERIMINE", ""]
@@ -26,6 +27,8 @@ export default class Navigation extends Component {
     mobileMenuOpen: false,
     hasScrolled: false,
   }
+
+  
 
   componentDidMount() {
     window.addEventListener("scroll", this.handleScroll)
@@ -52,8 +55,12 @@ export default class Navigation extends Component {
   }
 
   getNavLink = item => (
-    <Link to={`/${item.toLowerCase()}/`} onClick={this.closeMobileMenu}>
-      {item.replace("_", " ")}
+    <Link 
+      to={`/${item.toLowerCase()}/`} 
+      onClick={this.closeMobileMenu}
+    >
+      <MobileMenuItem>{item.replace("_", " ")}</MobileMenuItem>
+      
     </Link>
   )
 
@@ -79,8 +86,6 @@ export default class Navigation extends Component {
       <Nav {...this.props} scrolled={this.state.hasScrolled}>
         <StyledContainer>
 
-
-
                 <Brand>
                   <Link to="/" onClick={this.closeMobileMenu}>
                     <Title>
@@ -93,32 +98,28 @@ export default class Navigation extends Component {
 
 
                 <Mobile>
-                  <button
+                  <MobileButton
                     onClick={this.toggleMobileMenu}
-                    style={{ color: "black", background: "none" }}
                   >
                     {this.state.mobileMenuOpen ? (
                       <X size={24} alt="close menu" />
                     ) : (
                       <Menu size={24} alt="open menu" />
                     )}
-                  </button>
+                  </MobileButton>
                 </Mobile>
-              
-              
+          
                 <ActionsContainer>
-                  <Link to="/discordi_juhend/" style={{textDecoration: 'none'}}>
-                    <HeaderButton >Discordi juhend</HeaderButton>
+                  <Link to="/registreerimine" activeStyle={activeStyles}>
+                    <HeaderButton ><HeaderButtonText>Registreerimine</HeaderButtonText></HeaderButton>
                   </Link>
                 </ActionsContainer>
                 <ActionsContainer>
-                  <Link to="/registreerimine/" style={{textDecoration: 'none'}}>
-                    <HeaderButton >Registreerimine</HeaderButton>
+                  <Link to="/discordi_juhend" activeStyle={activeStyles}>
+                    <HeaderButton ><HeaderButtonText>Discordi juhend</HeaderButtonText></HeaderButton>
                   </Link>
                 </ActionsContainer>
-                    
-
-                    
+                
 
                     
         </StyledContainer>

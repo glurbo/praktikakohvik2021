@@ -7,14 +7,15 @@ import Companies from "../components/sections/companies"
 import Questions from "../components/sections/questions"
 import Navigation from "../components/common/navigation/navigation"
 import SEO from "../components/common/layout/seo"
-//test
+
 
 const IndexPage = () => (
   <Layout>
     <SEO/>
     <Navigation/>
     <Header />
-    
+    <About />
+    <Companies />
     <Questions />
     <Footer/>
   </Layout>

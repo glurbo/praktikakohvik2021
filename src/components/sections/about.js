@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
-
-import { Container, Section} from "../global"
+import AboutSvg from "../../images/svg/about.svg"
+import { Container, Section, TextGroup } from "../global"
 
 
 const About = () => {
@@ -11,11 +11,17 @@ const About = () => {
     <Container>
 
       <AboutContainer>
-        <div>
-          <p>Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it? Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a toy store, because you're here shopping for an infant named Jeb.</p>
+        <ImageDiv>
+         <AboutImage src={AboutSvg}/>
+        </ImageDiv>
 
-          <p>Now that we know who you are, I know who I am. I'm not a mistake! It all makes sense! In a comic, you know how you can tell who the arch-villain's going to be? He's the exact opposite of the hero. And most times they're friends, like you and me! I should've known way back when... You know why, David? Because of the kids. They called me Mr Glass.</p>
-        </div>
+        
+        <TextGroup>
+          <Title>Üritusest</Title>
+          <p>Praktikakohvik on TalTechi tudengitele suunatud infopäev, kus kohtuvad ettevõtete esindajad ja tulevased praktikandid. Huvilistel on võimalus küsida spetisalistidelt nende tööd puudutavaid küsimusi ning lähemalt tutvuda oma potentsiaalsete tööandjatega. Üritus toimub discordis, registreerijatele saadetakse kutse.</p>
+
+          <p>PS! Praktikakohvik on eelkõige suunatud IT-tudengitele, kuid ka teiste teaduskondade üliõpilased võivad leida enda jaoks midagi huvitvat. Üritust korraldavad TalTech IT-teaduskond, IT Kolledž ja IT-teaduskonna üliõpilaskogu.</p>
+        </TextGroup>
         
       </AboutContainer>
 
@@ -26,6 +32,22 @@ const About = () => {
 }
 
 export default About
+
+/*
+const Flex = styled.div`
+  display: grid;
+  justify-content: space-between;
+  align-content: center;
+  grid-template-columns: 1fr 1fr;
+  @media (max-width: ${props => props.theme.screen.md}) {
+    grid-template-columns: 1fr;
+  }
+`
+*/
+
+const Title = styled.h1`
+  text-align: center;
+`
 
 const AboutContainer = styled.section`
   ${props => props.theme.font_size.small}
@@ -38,9 +60,6 @@ const AboutContainer = styled.section`
   div {
     width: 47%;
     
-    p {
-      line-height: 30px;
-    }
   }
 
   @media (max-width: ${props => props.theme.screen.sm}) {
@@ -55,12 +74,9 @@ const AboutContainer = styled.section`
 `
 
 const AboutImage = styled.img`
-  max-width: 60%;
+  max-width: 100%;
   @media (max-width: ${props => props.theme.screen.sm}) {
     display: none;
-  }
-  @media (max-width: ${props => props.theme.screen.md}) {
-    max-width: 80%;
   }
 `
 
