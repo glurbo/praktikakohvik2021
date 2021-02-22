@@ -160,7 +160,6 @@ export const HeaderButton = styled.button`
   
   border-radius: 20px;
   padding: 10px 16px;
-  font-size: 12px;
   height: 42px;
   display: block;
   text-transform: uppercase;
@@ -187,7 +186,7 @@ export const activeStyles = {
 export const HeaderButtonText = styled.span`
   color: white;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 20px;
   letter-spacing: 1px;
 `
 
