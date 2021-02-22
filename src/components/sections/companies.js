@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import AnchorLink from "react-anchor-link-smooth-scroll"
 
-import { Section, Container, SectionTitle } from "../global"
+import { Section, Container } from "../global"
 import { graphql, useStaticQuery } from "gatsby";
 
 const Companies = () => {
@@ -28,7 +28,7 @@ const Companies = () => {
     //generate array of company names from graphql query
     data.allCompaniesJson.edges.forEach(item =>
         items.push(
-            <AnchorLink href="#info" key={item.node.company.name} offset="92">
+            <AnchorLink href="#info" key={item.node.company.name} offset="102">
             <Button value={item.node.company.name}
             onClick={e => changeCompanyInfo(e.target.value)} >
             {item.node.company.name}
@@ -67,7 +67,7 @@ const Companies = () => {
     return (
       <Section id="firmad">
         <Container>
-          <SectionTitle>Kes on kohal?</SectionTitle>
+          <h1>Osalevad firmad</h1>
           <Flex>
             <ContainerItem>
                 {items}
@@ -94,8 +94,8 @@ const ContainerItem = styled.section`
   span {
     text-transform: uppercase;
     color: ${props => props.theme.color.black.secondary};
-    ${props => props.theme.font.primary};
     ${props => props.theme.font_size.larger};
+    font-weight: 500;
     margin-bottom: 35px;
     @media (max-width: ${props => props.theme.screen.sm}) {
       margin-top: 35px;
@@ -104,9 +104,9 @@ const ContainerItem = styled.section`
   }
   div {
     color: ${props => props.theme.color.black.secondary};
-    ${props => props.theme.font.primary};
     ${props => props.theme.font_size.small};
     line-height: 30px;
+    font-size: 20px;
   }
   @media (max-width: ${props => props.theme.screen.sm}) {
     width: 100%;
@@ -115,8 +115,6 @@ const ContainerItem = styled.section`
 `
 
 const Button = styled.button`
-  ${props => props.theme.font.normal};
-  ${props => props.theme.font_size.xxsmall};
   color: ${props => props.theme.color.primary};
   line-height: 30px;
   letter-spacing: 1px;
@@ -126,14 +124,16 @@ const Button = styled.button`
   white-space: nowrap;
   background: ${props => props.theme.color.background.white};
   padding: 0px 20px;
-  border-width: 1px;
-  border-radius: 15px;
+  border-width: 5px;
+  border-radius: 25px;
   border-style: solid;
-  border-color: ${props => props.theme.color.primary};
+  border-color: ${props => props.theme.color.secondary};
   border-image: initial;
   outline: 0px;
+  transition: 0.3s;
   &:hover {
     box-shadow: rgba(110, 120, 152, 0.22) 0px 2px 10px 0px;
+    border-color: ${props => props.theme.color.tertiary};
   }
   @media (max-width: ${props => props.theme.screen.md}) {
   }
@@ -141,6 +141,25 @@ const Button = styled.button`
     margin-left: 0;
   }
 `
+
+/*
+export const HeaderButton = styled.button`
+  
+  font-family: ${props => props.theme.font.normal};
+  ${props => props.theme.font_size.xsmall};
+  
+  border-radius: 20px;
+  padding: 10px 16px;
+  font-size: 12px;
+  height: 42px;
+  display: block;
+  text-transform: uppercase;
+  cursor: pointer;
+  white-space: nowrap;
+  background: ${props => (props.scrolled ? "white" : props.theme.color.primary)};
+  margin: 0 10px;
+`
+*/
 
 const Flex = styled.div`
   display: flex;

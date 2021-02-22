@@ -36,8 +36,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `jpg`,
-        path: `${__dirname}/src/images/jpg`,
+        name: `png`,
+        path: `${__dirname}/src/images/png`,
       },
     },
     `gatsby-plugin-recaptcha`,
@@ -53,28 +53,12 @@ module.exports = {
     resolve: `gatsby-plugin-google-fonts`,
     options: {
       fonts: [
+        `Poppins\:300,400,500,700`,
+        `Lato\:400,700`,
+        `Montserrat\:400,600`
       ],
       display: 'swap'
     }
-  },
-  {
-    resolve: `gatsby-plugin-prefetch-google-fonts`,
-    options: {
-      fonts: [
-        {
-          family: `Poppins`,
-          variants: [`300`, `400`, `500`, `700`],
-        },
-        {
-          family: `Lato`,
-          variants: [`400`, `700`],
-        },
-        {
-          family: `Montserrat`,
-          variants: [`400`, `600`],
-        },
-      ],
-    },
   },
   
    

@@ -8,7 +8,7 @@ const theme = {
     light: "font-family: Poppins; font-weight: 300;",
     normal: "font-family: Poppins; font-weight: 300;",
     medium: "font-family: Poppins; font-weight: 300;",
-    semibold: "font-family: Poppins; font-weight: 300;",
+    semibold: "font-family: Poppins; font-weight: 400;",
     bold: "font-family: Poppins; font-weight: 500;",
     extrabold: "font-family: Poppins; font-weight: 700;",
   },
@@ -24,7 +24,7 @@ const theme = {
   },
 
   color: {
-    primary: "#1d1934",
+    primary: "#1d1935",
     secondary: "#4c3b8e",
     tertiary: "#b33c34",
     accent: "#cca86e",
