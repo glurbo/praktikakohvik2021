@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import HeaderImage from "../../images/svg/headerTransparent.svg"
+import HeaderImage from "../../images/svg/HeaderImage.svg"
 
 import { Container, TextGroup } from "../global"
 

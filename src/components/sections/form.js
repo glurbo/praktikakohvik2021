@@ -33,7 +33,7 @@ const MyForm = () => {
     setServerState({ submitting: true });
     axios({
       method: "post",
-      url: "https://getform.io/f/e92cda47-d128-4f1c-b7f0-a69e09fadd73",
+      url: "https://getform.io/f/a9eb4c50-67cf-487b-9090-331e52dce56e",
       data: new FormData(form)
     })
       .then(r => {
