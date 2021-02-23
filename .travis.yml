@@ -18,7 +18,7 @@ before_install:
   - ssh-add deploy_rsa
 branches:
   only:
-    - master
+    - main
 before_script:
   - npm install -g --silent
 script:
