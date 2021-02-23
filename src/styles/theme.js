@@ -2,15 +2,15 @@
 
 const theme = {
   font: {
-    primary: "font-family: Poppins; font-weight: 300;",
-    secondary: "font-family: Poppins; font-weight: 300;",
-    tertiary: "font-family: Poppins; font-weight: 300;",
-    light: "font-family: Poppins; font-weight: 300;",
-    normal: "font-family: Poppins; font-weight: 300;",
-    medium: "font-family: Poppins; font-weight: 300;",
-    semibold: "font-family: Poppins; font-weight: 400;",
-    bold: "font-family: Poppins; font-weight: 500;",
-    extrabold: "font-family: Poppins; font-weight: 700;",
+    primary: "font-family: Gilroy; font-weight: 300;",
+    secondary: "font-family: Gilroy; font-weight: 300;",
+    tertiary: "font-family: Gilroy; font-weight: 300;",
+    light: "font-family: Gilroy; font-weight: 300;",
+    normal: "font-family: Gilroy; font-weight: 300;",
+    medium: "font-family: Gilroy; font-weight: 300;",
+    semibold: "font-family: Gilroy; font-weight: 400;",
+    bold: "font-family: Gilroy; font-weight: 500;",
+    extrabold: "font-family: Gilroy; font-weight: 700;",
   },
   font_size: {
     xxxsmall: "font-size: 12px;",
@@ -24,9 +24,9 @@ const theme = {
   },
 
   color: {
-    primary: "#1d1935",
-    secondary: "#4c3b8e",
-    tertiary: "#b33c34",
+    primary: "#1d1935", // dark blue
+    secondary: "#302db9", // blue
+    tertiary: "#f73d13", // orange
     accent: "#cca86e",
     background: {
       white: "#ffffff",

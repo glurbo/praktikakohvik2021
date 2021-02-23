@@ -32,16 +32,7 @@ export const Container = styled.div`
 export const Section = styled.section`
   padding: 120px 0;
   overflow: hidden;
-  background-color: ${props => {
-    switch (props.accent) {
-      case "secondary":
-        return props.theme.color.white.dark
-      case "main":
-        return props.theme.color.primary
-      default:
-        return "white"
-    }
-  }};
+  background-color: ${props => props.theme.color.primary};
 
   @media (max-width: ${props => props.theme.screen.md}) {
     padding: 80px 0;
@@ -60,6 +51,10 @@ export const TextGroup = styled.div`
   border: 5px solid;
   border-radius: 25px;
   border-image: linear-gradient(to right, ${props => props.theme.color.secondary}, ${props => props.theme.color.tertiary} ) 1;
+  border-image-slice: 2;
+  &#headerGroup {
+    border-image: linear-gradient(to top, ${props => props.theme.color.secondary}, ${props => props.theme.color.tertiary} ) 1;
+  }
 
   padding: 15px;
   margin: 0;
@@ -75,13 +70,23 @@ export const TextGroup = styled.div`
 
   h1 {
     margin: 0 0 13px;
-    color: ${props => props.theme.color.primary};
+    color: ${props => props.theme.color.white.regular};
     font-size: 45px;
     @media (max-width: ${props => props.theme.screen.sm}) {
       ${props => props.theme.font_size.larger};
     }
     line-height: 56px;
     letter-spacing: 2px;
+    text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+  }
+
+  h2 {
+    color: ${props => props.theme.color.white.regular};
   }
 
   h4 {
@@ -100,9 +105,10 @@ export const TextGroup = styled.div`
   }
 
   p {
-    margin-bottom: 20px;
-    color: black;
-    font-size: 20px;
+    margin: 20px 0;
+    color: ${props => props.theme.color.white.regular};
+    font-weight: 400;
+    font-size: 22px;
     line-height: 30px;
   }
 `

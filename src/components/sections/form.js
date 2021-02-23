@@ -49,15 +49,15 @@ const MyForm = () => {
         <Container>
           <Flex>
             <FormBox>
-              <div className="col-md-10 mt-5">
+              <div className="col-md-12 mt-5">
                 <form onSubmit={handleOnSubmit}>
                   <div className="form-group">
-                    <label for="InputName">Nimi</label>
+                    <Label for="InputName">Nimi</Label>
                     <input type="text" name="Nimi" className="form-control" id="InputName" placeholder="Sisesta nimi" required="required"/>
                   </div>
                   <div className="form-group">
-                      <label for="InputEmail" required="required">Email</label>
-                      <input type="email" name="Email" className="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Sisesta email" required="required"/>
+                    <Label for="InputEmail" required="required">Email</Label>
+                    <input type="email" name="Email" className="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Sisesta email" required="required"/>
                   </div> 
                   <div className="form-group">
                     <ReCAPTCHA 
@@ -68,14 +68,10 @@ const MyForm = () => {
                       required
                     />
                   </div>
-                  <button type="submit" className="btn btn-lg btn-primary"  disabled={disableSubmit}>
+                  <button type="submit" className="btn btn-lg btn-primary" style={{ background: props => props.theme.color.secondary }}  disabled={disableSubmit}>
                       Salvesta
                   </button >
-                  {serverState.status && (
-                    <Success className={!serverState.status.ok ? "errorMsg" : ""}>
-                    {serverState.status.msg}
-                    </Success>
-                  )}
+                  
                 </form>
               </div>
             </FormBox>
@@ -83,7 +79,11 @@ const MyForm = () => {
               <StyledImage src={FormImage}/>
             </ImageWrapper>
           </Flex>
-          
+          {serverState.status && (
+                    <Success className={!serverState.status.ok ? "errorMsg" : ""}>
+                    {serverState.status.msg}
+                    </Success>
+                  )}
             
         </Container>
 
@@ -94,6 +94,12 @@ const MyForm = () => {
   
   export default MyForm;
 
+
+const Label = styled.label`
+  color: ${props => props.theme.color.white.regular};
+  font-size: 20px;
+  font-weight: 500;
+`
 
 const FormBox = styled.div`
   @media (min-width: ${props => props.theme.screen.md}) {
@@ -109,7 +115,7 @@ const StyledImage = styled.img`
   }
 `
 
-  const FormWrapper = styled.section`
+const FormWrapper = styled.section`
   padding: 160px 0 80px 0;
   position: relative;
   @media (max-width: ${props => props.theme.screen.md}) {
@@ -120,7 +126,7 @@ const StyledImage = styled.img`
   display: grid;
   justify-content: space-between;
   align-content: center;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 47% 47%;
   @media (max-width: ${props => props.theme.screen.md}) {
     grid-template-columns: 1fr;
   }

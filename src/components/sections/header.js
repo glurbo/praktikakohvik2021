@@ -14,10 +14,13 @@ const Header = () => {
           <StyledImage src={HeaderImage}></Styled>
         </ImageWrapper> */}
         <Flex>
-          <TextGroup>
+          <TextGroup id="headerGroup">
             <h1>
               LEIA ENDALE PRAKTIKAKOHT
             </h1>
+            <h2>
+              17.03 • kell 12:00 • Discordis
+            </h2>
             <p>
               Praktikakohvik on IT-tudengitele suunatud infopäev. Tudengitel on võimalus lähemalt tutvuda erinevate ettevõtete ja karjäärivõimalustega ning leida omale unistuste praktikakoht. Liitu ürituse Discordiga ja saa osa TalTechi suurimast praktika infopäevast.
             </p>
@@ -46,7 +49,7 @@ const Flex = styled.div`
   display: grid;
   justify-content: space-between;
   align-content: center;
-  grid-template-columns: 47% 47%;
+  grid-template-columns: 1fr 1fr;
   @media (max-width: ${props => props.theme.screen.md}) {
     grid-template-columns: 1fr;
   }
@@ -64,5 +67,6 @@ const ImageWrapper = styled.div`
 const StyledImage = styled.img`
   max-width: 100%;
   max-height: 100%;
+  object-position: -5px 0;
   }
 `

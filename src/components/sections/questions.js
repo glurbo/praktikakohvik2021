@@ -65,8 +65,9 @@ const List = styled.ul`
   margin: 20px auto;
   li {
     ${props => props.theme.font_size.small};
-    color: ${props => props.theme.color.primary};
+    color: ${props => props.theme.color.white.regular};
     font-size: 20px;
+    font-weight: 400;
     margin: 16px auto;
   }
 `

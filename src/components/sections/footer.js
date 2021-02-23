@@ -154,6 +154,7 @@ const ContactColumn = styled.div`
   span {
     font-size: 26px;
     color: ${props => props.theme.color.white.regular};
+    font-weight: 400;
   }
   div {
     display: flex;

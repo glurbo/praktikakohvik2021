@@ -110,12 +110,12 @@ export default class Navigation extends Component {
                 </Mobile>
           
                 <ActionsContainer>
-                  <Link to="/registreerimine" activeStyle={activeStyles}>
+                  <Link to="/registreerimine" activeStyle={activeStyles} >
                     <HeaderButton ><HeaderButtonText>Registreerimine</HeaderButtonText></HeaderButton>
                   </Link>
                 </ActionsContainer>
                 <ActionsContainer>
-                  <Link to="/discordi_juhend" activeStyle={activeStyles}>
+                  <Link to="/discordi_juhend" activeStyle={activeStyles} >
                     <HeaderButton ><HeaderButtonText>Discordi juhend</HeaderButtonText></HeaderButton>
                   </Link>
                 </ActionsContainer>

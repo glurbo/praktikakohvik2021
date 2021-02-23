@@ -9,6 +9,9 @@ export const Title = styled.span`
   @media (max-width: ${props => props.theme.screen.xs}) {
     font-size: 100%
   }
+  @media (max-width:${props => props.theme.screen.sm}) {
+    
+  }
   -webkit-text-stroke: 1px black;
   text-shadow:
        3px 3px 0 #000,
@@ -160,13 +163,14 @@ export const HeaderButton = styled.button`
   
   border-radius: 20px;
   padding: 10px 16px;
-  height: 42px;
+  height: 45px;
   display: block;
   text-transform: uppercase;
   cursor: pointer;
   white-space: nowrap;
   background: ${props => (props.scrolled ? "white" : props.theme.color.primary)};
   margin: 0 10px;
+  transition: 0.15s;
   &:hover {
     box-shadow: rgba(110, 120, 152, 0.22) 0px 2px 10px 0px;
     background: ${props => props.theme.color.tertiary};
@@ -176,11 +180,16 @@ export const HeaderButton = styled.button`
   @media (max-width: ${props => props.theme.screen.sm}) {
     margin-left: 0;
   }
+  text-shadow:
+       2px 2px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
 `
 
 export const activeStyles = {
-  background: `${props => props.theme.color.tertiary}`,
-  color: 'black'
+  background: props => props.theme.color.tertiary
   }
 
 export const HeaderButtonText = styled.span`
@@ -188,6 +197,13 @@ export const HeaderButtonText = styled.span`
   font-weight: 500;
   font-size: 20px;
   letter-spacing: 1px;
+  @media (max-width: ${props => props.theme.screen.md}) {
+    font-size: 18px;
+  }
+  @media (max-width: ${props => props.theme.screen.sm}) {
+    margin-left: 0;
+    font-size: 15px;
+  }
 `
 
 export const Mobile = styled.div`

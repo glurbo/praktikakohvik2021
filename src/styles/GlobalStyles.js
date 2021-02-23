@@ -14,12 +14,14 @@ const GlobalStyles = createGlobalStyle`
   
   body {
     font-family: ${props => props.theme.font.primary};
+    background-color: ${props => props.theme.color.primary};
   }
 
   
   h1 {
     ${props => props.theme.font_size.xlarge};
     font-family: ${props => props.theme.font.bold};
+    color: ${props => props.theme.color.white.regular};
     
   }
 

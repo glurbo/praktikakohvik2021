@@ -15,7 +15,6 @@ const Companies = () => {
             company {
               name
               about
-              image
             }
           }
         }
@@ -28,7 +27,7 @@ const Companies = () => {
     //generate array of company names from graphql query
     data.allCompaniesJson.edges.forEach(item =>
         items.push(
-            <AnchorLink href="#info" key={item.node.company.name} offset="102">
+            <AnchorLink href="#info" key={item.node.company.name} offset="112">
             <Button value={item.node.company.name}
             onClick={e => changeCompanyInfo(e.target.value)} >
             {item.node.company.name}
@@ -67,11 +66,12 @@ const Companies = () => {
     return (
       <Section id="firmad">
         <Container>
-          <h1>Osalevad firmad</h1>
+          <Title>Osalevad firmad</Title>
           <Flex>
             <ContainerItem>
                 {items}
             </ContainerItem>
+            
             <br />
             <ContainerItem id="info">
               <span ref={ nameRef }></span>
@@ -85,6 +85,23 @@ const Companies = () => {
 
 export default Companies
 
+const Div = styled.div`
+  margin: auto;
+  padding-top: 20px;
+  font-weight: 400;
+`
+
+const Title = styled.h1`
+  text-align: center;
+  margin-bottom: 30px;
+  text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+`
+
 const ContainerItem = styled.section`
   display: flex;
   width: 48%;
@@ -93,20 +110,20 @@ const ContainerItem = styled.section`
   align-self: start;
   span {
     text-transform: uppercase;
-    color: ${props => props.theme.color.black.secondary};
+    color: ${props => props.theme.color.white.regular};
     ${props => props.theme.font_size.larger};
     font-weight: 500;
     margin-bottom: 35px;
     @media (max-width: ${props => props.theme.screen.sm}) {
       margin-top: 35px;
-      ${props => props.theme.font_size.regular};
     }
   }
   div {
-    color: ${props => props.theme.color.black.secondary};
+    color: ${props => props.theme.color.white.regular};
     ${props => props.theme.font_size.small};
     line-height: 30px;
     font-size: 20px;
+    font-weight: 400;
   }
   @media (max-width: ${props => props.theme.screen.sm}) {
     width: 100%;
@@ -115,7 +132,7 @@ const ContainerItem = styled.section`
 `
 
 const Button = styled.button`
-  color: ${props => props.theme.color.primary};
+  color: ${props => props.theme.color.white.regular};
   line-height: 30px;
   letter-spacing: 1px;
   margin: 10px 10px;
@@ -123,17 +140,17 @@ const Button = styled.button`
   cursor: pointer;
   white-space: nowrap;
   background: ${props => props.theme.color.background.white};
-  padding: 0px 20px;
-  border-width: 5px;
+  padding: 5px 20px;
   border-radius: 25px;
-  border-style: solid;
-  border-color: ${props => props.theme.color.secondary};
-  border-image: initial;
   outline: 0px;
-  transition: 0.3s;
+  transition: 0.15s;
+  background-color: ${props => props.theme.color.secondary};
   &:hover {
     box-shadow: rgba(110, 120, 152, 0.22) 0px 2px 10px 0px;
-    border-color: ${props => props.theme.color.tertiary};
+    background-color: ${props => props.theme.color.tertiary};
+  }
+  &:onClick {
+    background-color: ${props => props.theme.color.tertiary};
   }
   @media (max-width: ${props => props.theme.screen.md}) {
   }
@@ -141,25 +158,6 @@ const Button = styled.button`
     margin-left: 0;
   }
 `
-
-/*
-export const HeaderButton = styled.button`
-  
-  font-family: ${props => props.theme.font.normal};
-  ${props => props.theme.font_size.xsmall};
-  
-  border-radius: 20px;
-  padding: 10px 16px;
-  font-size: 12px;
-  height: 42px;
-  display: block;
-  text-transform: uppercase;
-  cursor: pointer;
-  white-space: nowrap;
-  background: ${props => (props.scrolled ? "white" : props.theme.color.primary)};
-  margin: 0 10px;
-`
-*/
 
 const Flex = styled.div`
   display: flex;
