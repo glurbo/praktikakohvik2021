@@ -50,7 +50,7 @@ const Footer = () => {
             <br/>
             <div>
               <img src={data.image5.publicURL} alt="geo svg"/>
-              <span>Akadeemia tee 15a, ICT-361</span>
+              <span>Akadeemia tee 15a,<br/> ICT-361</span>
             </div>
           </ContactColumn>
         </FooterCol>
@@ -111,7 +111,8 @@ const FooterWrapper = styled.footer`
 `
 
 const Copyright = styled.span`
-  font-size: 15px;
+  font-size: 16px;
+  font-weight: 400;
   color: ${props => props.theme.color.white.lessdark};
   margin: 20px auto;
   margin-bottom: 0;
@@ -163,7 +164,7 @@ const ContactColumn = styled.div`
     justify-content: space-between;
     span {
       width: 200px;
-      font-size: 20px;
+      font-size: 18px;
       color: ${props => props.theme.color.white.lessdark};
     }
   }
