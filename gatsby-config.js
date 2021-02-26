@@ -60,6 +60,14 @@ module.exports = {
       display: 'swap'
     }
   },
+  {
+    resolve: `gatsby-plugin-manifest`,
+    options: {
+      name: `Praktikakohvik 2021`,
+      short_name: `Praktikakohvik 2021`,
+      icon: `src/images/icon.png`
+    },
+  },
   
    
   
