@@ -161,6 +161,7 @@ export const HeaderButton = styled.button`
   font-family: ${props => props.theme.font.normal};
   ${props => props.theme.font_size.xsmall};
   
+  border-radius: 20px;
   padding: 10px 16px;
   height: 45px;
   display: block;
