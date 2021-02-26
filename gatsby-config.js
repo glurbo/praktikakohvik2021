@@ -65,7 +65,7 @@ module.exports = {
     options: {
       name: `Praktikakohvik 2021`,
       short_name: `Praktikakohvik 2021`,
-      icon: `src/images/icon.png`
+      icon: `src/images/favicon.png`
     },
   },
   
