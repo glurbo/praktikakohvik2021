@@ -16,7 +16,7 @@ const Guide = () => {
                 <Flex>
                     <TextGroup>
                     <Title>Firmaga rääkimine</Title>
-                        <p>Kui soovite rääkida firmade esindajatega, liituge vastava firma helikanaliga, mille nimes on <i>queue</i>. Ühes firma helikanalis saab korraga olla kuni 5 inimest ja kui seal on vähem, siis saab sellega liituda. Helikanaliga liitudes on eesõigus nendel, kes on kauem oodanud. Samuti ei soovita ühe firmaga liiga kaua rääkida, et ka teised huvilised saaksid võimaluse.</p>
+                        <p>Kui soovite rääkida firmade esindajatega, liituge vastava firma helikanaliga, mille nimes on <i>queue</i>. Firmade esindajad ise valivad mitu inimest saab nende helikanalis korraga viibida ning kui seal on vabu kohti, siis saab sellega liituda. Helikanaliga liitudes on eesõigus nendel, kes on kauem oodanud. Samuti ei soovita ühe firmaga liiga kaua rääkida, et ka teised huvilised saaksid võimaluse.</p>
                     </TextGroup>    
                 </Flex>
                 <Flex>
