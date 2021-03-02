@@ -18,9 +18,9 @@ const About = () => {
         
         <TextGroup>
           <Title>Üritusest</Title>
-          <p>Praktikakohvik on TalTechi tudengitele suunatud infopäev, kus kohtuvad ettevõtete esindajad ja tulevased praktikandid. Huvilistel on võimalus küsida spetisalistidelt nende tööd puudutavaid küsimusi ning lähemalt tutvuda oma potentsiaalsete tööandjatega. Üritus toimub discordis, registreerijatele saadetakse kutse.</p>
+          <p>Praktikakohvik on TalTechi tudengitele suunatud infopäev, kus kohtuvad ettevõtete esindajad ja tulevased praktikandid. Huvilistel on võimalus küsida spetsialistidelt nende tööd puudutavaid küsimusi ning lähemalt tutvuda oma potentsiaalsete tööandjatega. Üritus toimub Discordis, registreerijatele saadetakse kutse.</p>
 
-          <p>PS! Praktikakohvik on eelkõige suunatud IT-tudengitele, kuid ka teiste teaduskondade üliõpilased võivad leida enda jaoks midagi huvitvat. Üritust korraldavad TalTech IT-teaduskond, IT Kolledž ja IT-teaduskonna üliõpilaskogu.</p>
+          <p>PS! Praktikakohvik on eelkõige suunatud IT-tudengitele, kuid ka teiste teaduskondade üliõpilased võivad leida enda jaoks midagi huvitvat. Üritust korraldab IT-teaduskonna üliõpilaskogu.</p>
         </TextGroup>
         
       </AboutContainer>
