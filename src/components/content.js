@@ -1,5 +1,5 @@
 const content = {
-    et: {
+    en: {
         navigation: {
             title: "INTERNSHIP CAFÉ<br>2021",
             registration: "Registration",
@@ -52,7 +52,7 @@ const content = {
             },
         }
     },
-    en: {
+    et: {
         navigation: {
             title: "PRAKTIKAKOHVIK<br>2021",
             registration: "Registreerimine",
