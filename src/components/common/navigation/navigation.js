@@ -3,6 +3,8 @@ import Scrollspy from "react-scrollspy"
 import { Menu, X } from "react-feather"
 import { Container } from "../../global"
 import { Link } from 'gatsby'
+import content from "../../content"
+import parse from 'html-react-parser'
 import {
   Nav,
   NavItem,
@@ -89,9 +91,7 @@ export default class Navigation extends Component {
                 <Brand>
                   <Link to="/" onClick={this.closeMobileMenu}>
                     <Title>
-                      PRAKTIKAKOHVIK 
-                      <br />
-                      2021
+                      {parse(content.et.navigation.title)}
                     </Title>
                   </Link>
                 </Brand>
@@ -111,12 +111,12 @@ export default class Navigation extends Component {
           
                 <ActionsContainer>
                   <Link to="/registreerimine" activeStyle={activeStyles} >
-                    <HeaderButton ><HeaderButtonText>Registreerimine</HeaderButtonText></HeaderButton>
+                    <HeaderButton ><HeaderButtonText>{content.et.navigation.registration}</HeaderButtonText></HeaderButton>
                   </Link>
                 </ActionsContainer>
                 <ActionsContainer>
                   <Link to="/discordi_juhend" activeStyle={activeStyles} >
-                    <HeaderButton ><HeaderButtonText>Discordi juhend</HeaderButtonText></HeaderButton>
+                    <HeaderButton ><HeaderButtonText>{content.et.navigation.guide}</HeaderButtonText></HeaderButton>
                   </Link>
                 </ActionsContainer>
                 

@@ -2,23 +2,18 @@ import React from "react"
 import styled from "styled-components"
 import QuestionsSvg from "../../images/svg/questions.svg"
 import { Section, Container, TextGroup } from "../global"
+import content from "../content"
+import parse from 'html-react-parser'
 
 const Questions = () => (
   <Section id="küsimused">
     <Container>
       <QuestionsContainer>
         <TextGroup>
-          <Title>Mida küsida?</Title>
-          <SubText>Siin on mõned näited küsimustest, mida esitada tööandjatele.</SubText>
-
+          <Title>{content.et.questions.title}</Title>
+          <SubText>{content.et.questions.subtext}</SubText>
           <List>
-            <li>Mis oskusi on vaja, et mingile kohale kandideerida?</li>
-            <li>Milliseid tehnoloogiad firmas kasutatakse?</li>
-            <li>Mida oodata palga suhtes?</li>
-            <li>Milline näeb välja kontori igapäev?</li>
-            <li>Milline on töökoormus?</li>
-            <li>Kui paindlik on tudengina tööl käimise juures graafik või koormus?</li>
-            <li>Mis on ettevõttes arenemisvõimalused? Kas pakutakse mingeid lisakoolitusi?</li>
+            {parse(content.et.questions.mainContent)}
           </List>
         </TextGroup>
         <ImageDiv>
@@ -26,7 +21,7 @@ const Questions = () => (
         </ImageDiv>
           
       </QuestionsContainer>
-      
+    
     </Container>
   </Section>
 )
@@ -44,7 +39,7 @@ const QuestionsContainer = styled.section`
   display: flex;
   justify-content: space-between;
   width: 100%;
-  
+
   div {
     width: 47%;
    

@@ -4,6 +4,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll"
 
 import { Section, Container } from "../global"
 import { graphql, useStaticQuery } from "gatsby";
+import content from "../content"
 
 const Companies = () => {
 
@@ -66,7 +67,7 @@ const Companies = () => {
     return (
       <Section id="firmad">
         <Container>
-          <Title>Osalevad firmad</Title>
+          <Title>{content.et.companies.title}</Title>
           <Flex>
             <ContainerItem>
                 {items}

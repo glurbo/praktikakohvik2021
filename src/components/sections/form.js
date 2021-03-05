@@ -5,6 +5,7 @@ import ReCAPTCHA from "react-google-recaptcha"
 import styled from "styled-components"
 import axios from "axios";
 import FormImage from "../../images/svg/form.svg"
+import content from "../content"
 
 let recaptchaInstance;
 
@@ -52,12 +53,12 @@ const MyForm = () => {
               <div className="col-md-12 mt-5">
                 <form onSubmit={handleOnSubmit}>
                   <div className="form-group">
-                    <Label for="InputName">Nimi</Label>
-                    <input type="text" name="Nimi" className="form-control" id="InputName" placeholder="Sisesta nimi" required="required"/>
+                    <Label for="InputName">{content.et.form.name}</Label>
+                    <input type="text" name="Nimi" className="form-control" id="InputName" placeholder={content.et.form.namePlaceholder} required="required"/>
                   </div>
                   <div className="form-group">
-                    <Label for="InputEmail" required="required">Email</Label>
-                    <input type="email" name="Email" className="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder="Sisesta email" required="required"/>
+                    <Label for="InputEmail" required="required">{content.et.form.email}</Label>
+                    <input type="email" name="Email" className="form-control" id="InputEmail" aria-describedby="emailHelp" placeholder={content.et.form.emailPlaceholder} required="required"/>
                   </div> 
                   <div className="form-group">
                     <ReCAPTCHA 
@@ -69,7 +70,7 @@ const MyForm = () => {
                     />
                   </div>
                   <button type="submit" className="btn btn-lg btn-primary" style={{ background: props => props.theme.color.secondary }}  disabled={disableSubmit}>
-                      Salvesta
+                    {content.et.form.button}
                   </button >
                   
                 </form>

@@ -3,6 +3,8 @@ import styled from "styled-components"
 import HeaderImage from "../../images/svg/HeaderImage.svg"
 
 import { Container, TextGroup } from "../global"
+import content from "../content"
+import parse from 'html-react-parser'
 
 const Header = () => {
   
@@ -15,15 +17,9 @@ const Header = () => {
         </ImageWrapper> */}
         <Flex>
           <TextGroup id="headerGroup">
-            <h1>
-              LEIA ENDALE PRAKTIKAKOHT
-            </h1>
-            <h2>
-              17.03 • kell 12:00 • Discordis
-            </h2>
-            <p>
-              Praktikakohvik on IT-tudengitele suunatud infopäev. Tudengitel on võimalus lähemalt tutvuda erinevate ettevõtete ja karjäärivõimalustega ning leida omale unistuste praktikakoht. Liitu ürituse Discordiga ja saa osa TalTechi suurimast praktika infopäevast.
-            </p>
+              {parse(content.et.header.title)}
+              {parse(content.et.header.secondaryTitle)}
+              {parse(content.et.header.content)}
           </TextGroup>
           <ImageWrapper>
             <StyledImage src={HeaderImage}/>
