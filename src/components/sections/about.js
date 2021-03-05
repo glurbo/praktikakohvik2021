@@ -2,8 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import AboutSvg from "../../images/svg/about.svg"
 import { Container, Section, TextGroup } from "../global"
-import content from "../content"
-import parse from 'html-react-parser'
+import { FormattedMessage, useIntl } from "gatsby-plugin-intl"
 
 const About = () => {
  
@@ -18,8 +17,9 @@ const About = () => {
 
         
         <TextGroup>
-          <Title>{content.et.about.title}</Title>
-          {parse(content.et.about.mainContent)}
+          <Title><FormattedMessage id="about.title"/></Title>
+          <p><FormattedMessage id="about.mainContent1"/></p>
+          <p><FormattedMessage id="about.mainContent2"/></p>
          </TextGroup>
         
       </AboutContainer>

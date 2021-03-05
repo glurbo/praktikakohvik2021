@@ -1,0 +1,60 @@
+{
+    "navigation": {
+        "title": "PRAKTIKAKOHVIK",
+        "registration": "Registreerimine",
+        "guide": "Discordi juhend"
+    },
+    "header": {
+        "title": "LEIA ENDALE PRAKTIKAKOHT",
+        "secondaryTitle": "17.03 • kell 12:00 • Discordis",
+        "content": "Praktikakohvik on IT-tudengitele suunatud infopäev. Tudengitel on võimalus lähemalt tutvuda erinevate ettevõtete ja karjäärivõimalustega ning leida omale unistuste praktikakoht. Liitu ürituse Discordiga ja saa osa TalTechi suurimast praktika infopäevast."
+    },
+    "about": {
+        "title": "Üritusest",
+        "mainContent1": "Praktikakohvik on TalTechi tudengitele suunatud infopäev, kus kohtuvad ettevõtete esindajad ja tulevased praktikandid. Huvilistel on võimalus küsida spetsialistidelt nende tööd puudutavaid küsimusi ning lähemalt tutvuda oma potentsiaalsete tööandjatega. Üritus toimub Discordis, registreerijatele saadetakse kutse.",
+        "mainContent2": "PS! Praktikakohvik on eelkõige suunatud IT-tudengitele, kuid ka teiste teaduskondade üliõpilased võivad leida enda jaoks midagi huvitvat. Üritust korraldab IT-teaduskonna üliõpilaskogu."
+    },
+    "companies": {
+        "title": "Osalevad firmad"
+    },
+    "questions": {
+        "title": "Mida küsida?",
+        "subtext": "Siin on mõned näited küsimustest, mida esitada tööandjatele.",
+        "question1": "Mis oskusi on vaja, et mingile kohale kandideerida?",
+        "question2": "Milliseid tehnoloogiad firmas kasutatakse?",
+        "question3": "Mida oodata palga suhtes?",
+        "question4": "Milline näeb välja kontori igapäev?",
+        "question5": "Milline on töökoormus?",
+        "question6": "Kui paindlik on tudengina tööl käimise juures graafik või koormus?",
+        "question7": "Mis on ettevõttes arenemisvõimalused? Kas pakutakse mingeid lisakoolitusi?"
+    },
+    "form": {
+        "name": "Nimi",
+        "namePlaceholder": "Sisesta nimi",
+        "email": "Email",
+        "emailPlaceholder": "Sisesta email",
+        "button": "Esita"
+    },
+    "guide": {
+        "textBox1": {
+            "title": "Helikanalid ja tekstikanalid",
+            "content": "Discordis on võimalik rääkida kahel viisil, helikanalites ja tekstikanalites. Need leiduvad ekraani vasakul serverite ikoonidest paremal. Tekstikanalid algavad #-ga. Tuleb tähele panna, et õige tekst jõuaks õigesse kanalisse! Helikanalite ees on kõlari ikoon, kui sellele vajutate, olete koheselt helikanalis ning valmis rääkima. Kui mingil põhjusel ei ole Teid kuulda või helikvaliteet ei ole see, mis ta võiks olla, siis andke moderaatoritele teada, proovime leida sellele probleemile lahenduse!"
+        },
+        "textBox2": {
+            "title": "Keegi liiga vali või vaikne?",
+            "content": "Discordis on võimalik panna teisi inimesi vaiksemaks või valjemaks. Selle jaoks on vaja teha parem hiireklikk inimese nime peal, kus leidub User Volume valik ning selle all olevat valget täppi vasakule lohistades läheb selle isiku mikrofon vaiksemaks ning paremale lohistades valjemaks. Niimoodi saab muuta teise inimese heli ainult Teie jaoks, teisi inimesi see ei mõjuta."
+        },
+        "textBox3": {
+            "title": "Enda mikrofoni ja heli vaigistamine",
+            "content": "Enda mikrofoni vaigistamise valiku leiab ekraani alumisest osast vahetult Teie Discordi nime paremal pool, kus on mikrofoni ja kõrvaklappide ikoon. Kui mikrofoni peal on diagonaalne punane joon, olete juba vaigistatud. Selle ikooni peale vajutades saab mikrofoni sisse ja välja lülitada. Kõrvaklappide ikooni peale vajutades saab Discordi heli välja lülitada."
+        },
+        "textBox4": {
+            "title": "Firmaga rääkimine",
+            "content": "Kui soovite rääkida firmade esindajatega, liituge vastava firma helikanaliga, mille nimes on queue. Ühes firma helikanalis saab korraga olla kuni 5 inimest. Kui kõne liikmete arv on täis, peate ootama kuni koht vabaneb. Helikanaliga liitudes on eesõigus nendel, kes on kauem oodanud. Samuti ei soovita ühe firmaga liiga kaua rääkida, et ka teised huvilised saaksid võimaluse."
+        },
+        "textBox5": {
+            "title": "Küsimused ja probleemid",
+            "content": "Kui tekib probleeme või küsimusi, siis kirjutage #help tekstikanalisse ning Praktikakohviku moderaatorid on kohe valmis aitama."
+        }
+    }
+}

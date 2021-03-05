@@ -2,9 +2,9 @@ import React, { Component } from "react"
 import Scrollspy from "react-scrollspy"
 import { Menu, X } from "react-feather"
 import { Container } from "../../global"
-import { Link } from 'gatsby'
-import content from "../../content"
-import parse from 'html-react-parser'
+import { FormattedMessage, useIntl, Link } from "gatsby-plugin-intl"
+//import { Link } from 'gatsby'
+import Language from "../../language"
 import {
   Nav,
   NavItem,
@@ -91,7 +91,9 @@ export default class Navigation extends Component {
                 <Brand>
                   <Link to="/" onClick={this.closeMobileMenu}>
                     <Title>
-                      {parse(content.et.navigation.title)}
+                      <FormattedMessage id="navigation.title"/>
+                      <br/>
+                      2021
                     </Title>
                   </Link>
                 </Brand>
@@ -108,17 +110,19 @@ export default class Navigation extends Component {
                     )}
                   </MobileButton>
                 </Mobile>
-          
+            
                 <ActionsContainer>
-                  <Link to="/registreerimine" activeStyle={activeStyles} >
-                    <HeaderButton ><HeaderButtonText>{content.et.navigation.registration}</HeaderButtonText></HeaderButton>
+                  <Link to="/registreerimine/" activeStyle={activeStyles} >
+                    <HeaderButton ><HeaderButtonText><FormattedMessage id="navigation.registration"/></HeaderButtonText></HeaderButton>
                   </Link>
                 </ActionsContainer>
                 <ActionsContainer>
-                  <Link to="/discordi_juhend" activeStyle={activeStyles} >
-                    <HeaderButton ><HeaderButtonText>{content.et.navigation.guide}</HeaderButtonText></HeaderButton>
+                  <Link to="/discordi_juhend/" activeStyle={activeStyles} >
+                    <HeaderButton ><HeaderButtonText><FormattedMessage id="navigation.guide"/></HeaderButtonText></HeaderButton>
                   </Link>
                 </ActionsContainer>
+                
+                <Language/>
                 
 
                     

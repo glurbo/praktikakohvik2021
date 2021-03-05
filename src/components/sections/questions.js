@@ -4,16 +4,23 @@ import QuestionsSvg from "../../images/svg/questions.svg"
 import { Section, Container, TextGroup } from "../global"
 import content from "../content"
 import parse from 'html-react-parser'
+import { FormattedMessage } from "gatsby-plugin-intl"
 
 const Questions = () => (
   <Section id="küsimused">
     <Container>
       <QuestionsContainer>
         <TextGroup>
-          <Title>{content.et.questions.title}</Title>
-          <SubText>{content.et.questions.subtext}</SubText>
+          <Title><FormattedMessage id="questions.title"/></Title>
+          <SubText><FormattedMessage id="questions.subtext"/></SubText>
           <List>
-            {parse(content.et.questions.mainContent)}
+            <li><FormattedMessage id="questions.question1"/></li>
+            <li><FormattedMessage id="questions.question2"/></li>
+            <li><FormattedMessage id="questions.question3"/></li>
+            <li><FormattedMessage id="questions.question4"/></li>
+            <li><FormattedMessage id="questions.question5"/></li>
+            <li><FormattedMessage id="questions.question6"/></li>
+            <li><FormattedMessage id="questions.question7"/></li>
           </List>
         </TextGroup>
         <ImageDiv>

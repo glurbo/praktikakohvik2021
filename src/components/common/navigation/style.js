@@ -42,7 +42,6 @@ export const Nav = styled.nav`
 export const MobileButton = styled.button`
   color: ${props => props.theme.color.tertiary};
   background: none;
-
 `
 
 export const MobileMenuItem = styled.div`
@@ -133,7 +132,10 @@ export const Brand = styled.div`
   text-decoration: none;
   letter-spacing: 1px;
   @media (max-width: ${props => props.theme.screen.xs}) {
-    width: 80%;
+    width: 95%;
+  }
+  @media (max-width: 400) {
+    width: 50%;
   }
   margin: 0;
   ul {
@@ -207,7 +209,7 @@ export const HeaderButtonText = styled.span`
 
 export const Mobile = styled.div`
   display: none;
-
+  margin: 1em;
   @media (max-width: ${props => props.theme.screen.xs}) {
     display: block;
   }

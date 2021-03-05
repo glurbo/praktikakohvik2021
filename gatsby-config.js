@@ -68,6 +68,19 @@ module.exports = {
       icon: `src/images/favicon.png`
     },
   },
+  {
+    resolve: `gatsby-plugin-intl`,
+    options: {
+      // language JSON resource path
+      path: `${__dirname}/src/intl`,
+      // supported language
+      languages: [`et`, `en`],
+      // language file path
+      defaultLanguage: `et`,
+      // option to redirect to `/ko` when connecting `/`
+      redirect: true,
+    },
+  },
   
    
   

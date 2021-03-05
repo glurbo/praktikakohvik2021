@@ -3,6 +3,7 @@ import styled from "styled-components"
 import { Container, TextGroup } from "../global"
 import content from "../content"
 import parse from 'html-react-parser'
+import { FormattedMessage } from "gatsby-plugin-intl"
 
 
 const Guide = () => {
@@ -11,32 +12,32 @@ const Guide = () => {
                 <Container>
                     <Flex>
                         <TextGroup>
-                        <Title>{content.et.guide.textBox1.title}</Title>
-                            {parse(content.et.guide.textBox1.content)}
+                        <Title><FormattedMessage id="guide.textBox1.title"/></Title>
+                            <p><FormattedMessage id="guide.textBox1.content"/></p>
                         </TextGroup>
                     </Flex>
                     <Flex>
                         <TextGroup>
-                        <Title>{content.et.guide.textBox2.title}</Title>
-                            {parse(content.et.guide.textBox2.content)}    
+                        <Title><FormattedMessage id="guide.textBox2.title"/></Title>
+                            <p><FormattedMessage id="guide.textBox2.content"/></p>  
                         </TextGroup>
                     </Flex>
                     <Flex>
                         <TextGroup>
-                        <Title>{content.et.guide.textBox3.title}</Title>
-                            {parse(content.et.guide.textBox3.content)}   
+                        <Title><FormattedMessage id="guide.textBox3.title"/></Title>
+                            <p><FormattedMessage id="guide.textBox3.content"/></p>
                         </TextGroup>
                     </Flex>
                     <Flex>
                         <TextGroup>
-                        <Title>{content.et.guide.textBox4.title}</Title>
-                            {parse(content.et.guide.textBox4.content)}
+                        <Title><FormattedMessage id="guide.textBox4.title"/></Title>
+                            <p><FormattedMessage id="guide.textBox4.content"/></p>
                         </TextGroup>    
                     </Flex>
                     <Flex>
                         <TextGroup>
-                        <Title>{content.et.guide.textBox5.title}</Title>
-                            {parse(content.et.guide.textBox5.content)}
+                        <Title><FormattedMessage id="guide.textBox5.title"/></Title>
+                            <p><FormattedMessage id="guide.textBox5.content"/></p>
                         </TextGroup>
                     </Flex>
                 

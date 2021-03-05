@@ -1,25 +1,21 @@
 import React from "react"
 import styled from "styled-components"
 import HeaderImage from "../../images/svg/HeaderImage.svg"
-
+import { FormattedMessage } from "gatsby-plugin-intl"
 import { Container, TextGroup } from "../global"
-import content from "../content"
-import parse from 'html-react-parser'
 
 const Header = () => {
   
 
+
   return (
     <HeaderWrapper id="top">
       <Container>
-        {/* <ImageWrapper>
-          <StyledImage src={HeaderImage}></Styled>
-        </ImageWrapper> */}
         <Flex>
           <TextGroup id="headerGroup">
-              {parse(content.et.header.title)}
-              {parse(content.et.header.secondaryTitle)}
-              {parse(content.et.header.content)}
+            <h1><FormattedMessage id="header.title"/></h1>
+            <h2><FormattedMessage id="header.secondaryTitle"/></h2>
+            <p><FormattedMessage id="header.content"/></p>
           </TextGroup>
           <ImageWrapper>
             <StyledImage src={HeaderImage}/>
