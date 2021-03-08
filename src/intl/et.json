@@ -33,7 +33,8 @@
         "namePlaceholder": "Sisesta nimi",
         "email": "Email",
         "emailPlaceholder": "Sisesta email",
-        "button": "Esita"
+        "button": "Esita",
+        "success": "Täname registreerimast!"
     },
     "guide": {
         "textBox1": {

@@ -33,7 +33,8 @@
         "namePlaceholder": "Enter name",
         "email": "Email",
         "emailPlaceholder": "Enter email",
-        "button": "Submit"
+        "button": "Submit",
+        "success": "Thanks for registering!"
     },
     "guide": {
         "textBox1": {

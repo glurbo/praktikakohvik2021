@@ -82,7 +82,7 @@ const MyForm = () => {
           </Flex>
           {serverState.status && (
                     <Success className={!serverState.status.ok ? "errorMsg" : ""}>
-                    {serverState.status.msg}
+                      <FormattedMessage id="form.success"/>
                     </Success>
                   )}
             
