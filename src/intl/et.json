@@ -38,24 +38,18 @@
     },
     "guide": {
         "textBox1": {
-            "title": "Helikanalid ja tekstikanalid",
-            "content": "Discordis on võimalik rääkida kahel viisil, helikanalites ja tekstikanalites. Need leiduvad ekraani vasakul serverite ikoonidest paremal. Tekstikanalid algavad #-ga. Tuleb tähele panna, et õige tekst jõuaks õigesse kanalisse! Helikanalite ees on kõlari ikoon, kui sellele vajutate, olete koheselt helikanalis ning valmis rääkima. Kui mingil põhjusel ei ole Teid kuulda või helikvaliteet ei ole see, mis ta võiks olla, siis andke moderaatoritele teada, proovime leida sellele probleemile lahenduse!"
+            "title": "Discordi installimine",
+            "content": "Discordil on olemas veebiversioon ja programm. Meie soovitame kasutada programmi, sellepärast et sellel on rohkem võimalusi ning samuti kui peaks tekkima probleeme, oskavad moderaatorid sellega paremini aidata. Discordi alla laadimiseks minge lehele: <a>discord.com/download</a> ja valige sealt enda operatsioonisüsteemile (Windows, MacOS, jne.) vastav allalaadimislink. Kui DiscordSetup.exe fail on alla laetud, tuleb selle peal teha hiire vasaku nupuga topeltklõps ning Discord teeb ülejäänud asjad ise ära. Kui olete discordi edukalt alla laadinud ja avanud, on vaja veel registreeruda. Selleks vajutage “Register”-i peale."
         },
         "textBox2": {
-            "title": "Keegi liiga vali või vaikne?",
-            "content": "Discordis on võimalik panna teisi inimesi vaiksemaks või valjemaks. Selle jaoks on vaja teha parem hiireklikk inimese nime peal, kus leidub User Volume valik ning selle all olevat valget täppi vasakule lohistades läheb selle isiku mikrofon vaiksemaks ning paremale lohistades valjemaks. Niimoodi saab muuta teise inimese heli ainult Teie jaoks, teisi inimesi see ei mõjuta."
+            "title": "Registreerimine kasutajaks",
+            "content": "Täitke vajalikud lüngad ära, nimeks soovitame panna enda nime (eesnime või täispika nime) ja siis vajutage <i>Continue</i> nuppu. Seejärel on Teil vaja ka kinnitada Teie kasutaja. Selleks tuleb Teie sisestatud meili postkasti email, mille keskel olevale <i>Verify email</i> nupule. Vajadusel kontrollib avanev lehekülg, et Teie ei ole robot, kuid siis ongi kasutaja registreeritud."
         },
         "textBox3": {
-            "title": "Enda mikrofoni ja heli vaigistamine",
-            "content": "Enda mikrofoni vaigistamise valiku leiab ekraani alumisest osast vahetult Teie Discordi nime paremal pool, kus on mikrofoni ja kõrvaklappide ikoon. Kui mikrofoni peal on diagonaalne punane joon, olete juba vaigistatud. Selle ikooni peale vajutades saab mikrofoni sisse ja välja lülitada. Kõrvaklappide ikooni peale vajutades saab Discordi heli välja lülitada."
+            "content": "Kui meili pealt kinnitusmeili ei leia, kontrollige ka rämpsposti. Kui siiski ei leia, logige Discordi sisse ja vajutage ekraani all osas Teie kasutajanimest paremal asuvale hammasratta ikoonile."
         },
         "textBox4": {
-            "title": "Firmaga rääkimine",
-            "content": "Kui soovite rääkida firmade esindajatega, liituge vastava firma helikanaliga, mille nimes on queue. Ühes firma helikanalis saab korraga olla kuni 5 inimest. Kui kõne liikmete arv on täis, peate ootama kuni koht vabaneb. Helikanaliga liitudes on eesõigus nendel, kes on kauem oodanud. Samuti ei soovita ühe firmaga liiga kaua rääkida, et ka teised huvilised saaksid võimaluse."
-        },
-        "textBox5": {
-            "title": "Küsimused ja probleemid",
-            "content": "Kui tekib probleeme või küsimusi, siis kirjutage #help tekstikanalisse ning Praktikakohviku moderaatorid on kohe valmis aitama."
+            "content": "Avanevas aknas vajutage vasakul olevale <i>My Account</i> nupule ning ekraani üleval kollases kastis olevale valgele nupule vajutades saadetakse teile kinnitusmeil uuesti."
         }
     }
 }

@@ -38,24 +38,18 @@
     },
     "guide": {
         "textBox1": {
-            "title": "Voice channels and text channels",
-            "content": "There are 2 ways of communication in Discord, voice channels and text channels. These can be found on the left side of the screen, just right of the discord server icons. Text channels begin with the “#” symbol, but pay attention that texts end up in the correct text channel! Voice channels appear with a speaker icon, if you click on it, you will automatically join the voice channel right away and ready to speak. If for some reason other people can’t hear you or sound quality isn’t good enough, contact the moderators and we will try to find the solution for you!"
+            "title": "Installing Discord",
+            "content": "Discord has both a browser version and an app. We recommend using the app, because it has more options and if you encounter any problems, the moderators might be able to help better. To download discord, go to the website <a>discord.com/download</a> and choose the download link that corresponds with your operating system. (Windows, MacOS, etc.) When DiscordSetup.exe has been downloaded, double left-click on the file and Discord will do the rest itself. Once you’ve successfully downloaded and opened discord, you need to create an account. In order to do that, click on the “Register” button."
         },
         "textBox2": {
-            "title": "Someone too loud or too quiet?",
-            "content": "Discord allows you to change other peoples volume if it is too quiet or too loud. (Note other people will not get affected by this.) To achieve this, you need to hover over the persons name and right-click, then you will see the User Volume option appear in the pop-up menu, dragging the white dot to the left will lower the users volume and dragging the dot to the right will raise the volume."
+            "title": "Registering as a user",
+            "content": "Fill in the necessary blanks. We recommend using your first name or full name as your username. Once you’ve done that, click the “Continue” button. Now you need to verify your account. You should have received an email, in which you should click the “Verify email” button. You may get a captcha to check that you are not a robot but then your account will be verified."
         },
         "textBox3": {
-            "title": "Muting yourself and deafening Discord",
-            "content": "To mute yourself in Discord, locate the microphone icon on the bottom of the screen directly to the right of your name. If there is a diagonal red line across the microphone icon, that means that you’re already muted. Clicking on the icon will toggle your microphone on and off. The headphones icon will deafen Discord and you will not hear anyone nor will anyone hear you."
+            "content": "If you can’t find the verification email, check your spam folder. If you still can’t find it, log in to your Discord account and click on the gear icon that is located at the bottom of the screen to the right of your username."
         },
         "textBox4": {
-            "title": "Speaking to a company",
-            "content": "If you wish to speak with a representative from a company, join the voice channel with the corresponding voice channel that also has “queue” in its name. The channel with the representatives in it has a maximum capacity of 5 people and if there is less than 5 people in the channel, then you can join said channel. Please let the people who have been in the queue channel longer join first. The representatives might notice you skipping line and that will leave a bad impression on them. If you’ve talked for a while with the same company, please leave the channel so that other interested people can join."
-        },
-        "textBox5": {
-            "title": "Questions and problems",
-            "content": "If you have any questions or problems, then type in the #help text channel and moderators will try to find a solution as fast as possible."
+            "content": "In the window that opens up, click on the “My Account” tab on the left side of the screen and then click on the white button on the yellow background and Discord will send you another verification email."
         }
     }
 }
