@@ -1,7 +1,7 @@
 import React from "react"
 import { IntlContextConsumer, changeLocale } from "gatsby-plugin-intl"
-import estonia from "../images/svg/estonia.svg"
-import unitedkingdom from "../images/svg/unitedkingdom.svg"
+import estonia from "../images/svg/eesti_lipp.svg"
+import unitedkingdom from "../images/svg/uk_lipp.svg"
 
 const languageName = {
   en: "English",
@@ -34,7 +34,7 @@ const Language = () => {
                 flexDirection: `column`
               }}
             >
-                <img src={(languageName[language] === "Eesti") ? estonia : unitedkingdom} style={{height: 30}}></img>
+                <img src={(languageName[language] === "Eesti") ? estonia : unitedkingdom} style={{height: 30, objectPosition: "0 0"}}></img>
             </a>
           ))
         }
