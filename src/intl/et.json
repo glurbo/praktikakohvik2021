@@ -42,7 +42,7 @@
             "content": "Discordil on olemas veebiversioon ja programm. Meie soovitame kasutada programmi, sellepärast et sellel on rohkem võimalusi ning samuti kui peaks tekkima probleeme, oskavad moderaatorid sellega paremini aidata. Discordi alla laadimiseks minge lehele: <a>discord.com/download</a> ja valige sealt enda operatsioonisüsteemile (Windows, MacOS, jne.) vastav allalaadimislink. Kui DiscordSetup.exe fail on alla laetud, tuleb selle peal teha hiire vasaku nupuga topeltklõps ning Discord teeb ülejäänud asjad ise ära. Kui olete discordi edukalt alla laadinud ja avanud, on vaja veel registreeruda. Selleks vajutage “Register”-i peale."
         },
         "textBox2": {
-            "title": "Registreerimine kasutajaks",
+            "title": "Kasutaja loomine",
             "content": "Täitke vajalikud lüngad ära, nimeks soovitame panna enda nime (eesnime või täispika nime) ja siis vajutage <i>Continue</i> nuppu. Seejärel on Teil vaja ka kinnitada Teie kasutaja. Selleks tuleb Teie sisestatud meili postkasti email, mille keskel olevale <i>Verify email</i> nupule. Vajadusel kontrollib avanev lehekülg, et Teie ei ole robot, kuid siis ongi kasutaja registreeritud."
         },
         "textBox3": {
