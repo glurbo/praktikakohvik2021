@@ -22,7 +22,7 @@
     {
         "company": {
             "name": "Devtailor",
-            "about": "Firma kirjeldus lisatakse varsti, vaadake hiljem uuesti."
+            "about": "<b>Time to start your next big thing with Devtailor.</b><br>Being very supportive of emerging technologies gives us the advantage of knowing the options to choose from. All our developers have strong fundamentals with eagerness to adopt and learn new things. Everyone will play a sizeable role in the company and will be given everything you need to grow.<br><br>Our work is more than just software and hardware development. We are leading the way in digital transformation and software innovation.<br><br>We push our clients to think bigger and dream more.<br><br>We are building the future with modern technologies. We deploy tool-for-the-job approach in our choice of technology as not all clients and projects are the same. At Devtailor, the world of tomorrow is more than just a prediction, it is our job.<br><br>Open positions:<ul><li>Development intern</li><li>UI/UX designer</li><li>Analyst</li></ul><br>Contact us: <a target='_blank' href='mailto:hello@devtailor.com'>hello@devtailor.com</a><br>Web: <a target='_blank' href='https://www.devtailor.com'>www.devtailor.com </a><br>Works: <a target='_blank' href='https://portfolio.devtailor.com'>portfolio.devtailor.com</a>"
         }
     },
     {
@@ -51,8 +51,8 @@
     },
     {
         "company": {
-            "name": "Tervise ja Heaolu Infosüsteemide Keskus",
-            "about": "Firma kirjeldus lisatakse varsti, vaadake hiljem uuesti."
+            "name": "BAFF Professional Internship Program ",
+            "about": "Üliõpilane või äsja ülikooli lõpetanud – pakume vastavalt Sinu erialale Sulle praktikakogemust Ameerikas! Kandideeri BAFF erialapraktika programmi ja leiame Sulle ise sobiva praktika kohta 11. kuuks Ameerikas!<br><br>Balti-Ameerika Vabaduse Fond (BAFF) ootab üliõpilasi ja äsja kõrgkooli lõpetanuid kandideerima erialase praktika programmi, mille abil on võimalik kuni aasta aega stipendiumprogrammi abil erialast kogemust omandada Ameerikas.<br><br>Programmi teeb eriliseks asjaolu, et <b>sisse-saanutele otsitakse BAFF-i poolt sobiv praktika koht</b> ja osalejale tagatakse stipendium <b>kuni 30 000 dollarit aastas</b>, mis katab kõik kulud ehk lennupiletid, tervisekindlustuse ning võimaldab ka igapäevaselt ära elada USA-s (majutus, toitlustus, reisimine USA-s jmt). Fondi abil on praktikal käinud üle saja eestlase, kes on olnud väga erineva haridusliku taustaga nagu näiteks: avalik haldus ja avalikud suhted, ajakirjandus, ettevõtlus, IT, geneetika, kunst ja filmindus, heategevus, haridus, energeetika, ehitus, turism, põllumajandus, arhitektuur jpt.<br><br>Kandideerida saavad üliõpilased või äsja ülikooli lõpetanud Eesti, Läti või Leedu kodanikud.<br><br>Kandideerimiseks vajalike dokumentide ja kandideerimisprotsessi kirjeldus on leitav <a target='_blank' href='https://balticamericanfreedomfoundation.org/programs-awards-internship/'>BAFF veebilehel</a>.<br><br>Baltic-American Freedom Foundation (BAFF) tegutseb Baltimaades alates 2010. aasta sügisest. Fondi missioon on tugevdada sidet USA ning Eesti, Läti ja Leedu vahel majanduskasvule ja demokraatlike protsesside arengule suunatud hariduslike vahetusprogrammide läbiviimisega. Fond investeerib Baltimaade inimressurssidesse, pakkudes perspektiivikatele tudengitele ja teadlastele stipendiumiprogramme, mis võimaldavad saada toetust praktikaks ja uurimistööks Ameerika Ühendriikides."
         }
     },
     { 
@@ -83,6 +83,12 @@
         "company": {
             "name": "Spin TEK",
             "about": "Spin TEK AS on üks Eesti vanimaid IT-firmasid. Oleme oma 29 tegevusaasta jooksul arendanud suurel hulgal erinevaid infosüsteeme nii avalikule sektorile kui ka eraettevõtetele. Tegutseme paljude põnevate projektidega nii Eestis kui ka rahvusvahelistel turgudel. Meie põhiväärtusteks on kvaliteet ja stabiilsus – soovime luua vaid sellist tarkvara, mis töötab pikaajaliselt.<br><br><b>KEDA OTSIME:</b><br>Oma meeskonda otsime eesti keelt kõnelevat tarkvara arendaja praktikanti, kellel on olemas tehniline loovus ja erialased algteadmised.<br>Meie stackiks on Symfony (PHP) ja PostgreSQL, front-endis kasutame erinevaid Javascripti raamistikke.<br>Praktikandilt ei eelda me konkreetsete programmeerimiskeelte või frameworkide kasutamise kogemust - need tekivad töö käigus - kuid ootame tõsist huvi programmeerimise vastu ja soovi oma teadmisi täiendada!<br><br><b>MIDA PAKUME:</b><br>Omalt poolt garanteerime vaheldusrikka töö ja abivalmis meeskonna. Määrame sulle kogenud mentori, kelle juhendamisel osaled reaalsetes projektides ning saad kogemuse uute originaaltarkvarade arendamisest. Meil on alati käsil korraga mitu erinevat põnevat projekti, seega ei saa töö meie meeskonnas kunagi igav olema.<br>Praktika on tasustatud! Kõiki praktikante näeme potentsiaalsete uute kolleegidena, kellega sobivusel sõlmime pärast praktikat ka töölepingu.<br><br>Anna endast märku: <a target='_blank' href='https://www.spin.ee/praktika'>www.spin.ee/praktika</a> või <a target='_blank' href='mailto:info@spin.ee'>info@spin.ee</a>"
+        }
+    },
+    {
+        "company": {
+            "name": "TalTech teadusarvutuste keskus ",
+            "about": "TalTech teadusarvutuste keskus haldab ja arendab suuremahulist arvutusressurssi, mille abil saavad Eesti teadlased analüüsida suuri andmeid ja läbi viia keerukaid simulatsioone. Meil on üle 200 serveri, 200TB salvestusmahtu ja värske server NVidia A100 graafikaprotsessoritega. Teeme tihedat koostööd teiste Eesti teadusarvutuste keskustega ja aitame oma kasutajaid Soomes loodavad LUMI superarvuti peale arvutama. LUMI superarvuti valmib suvel ja tõenäoliselt on ta sel ajal maailma superarvutite edetabelis kolme esimese seas.<br><br>Serverite operatsioonisüsteemina kasutame Linuxit, konfiguratsioone haldame Ansible’ga. Riistvara poole peal kasutame muu hulgas InfiniBandi võrku, 100GbE, vesijahutusega servereid.<br><br>Otsime oma tiimi uusi liikmeid, kellele meeldivad serverid ning kes on huvitatud koostööst oma valdkonna tippteadlastega. Tegevusi jätkub meil nii administraatoritele, arendajatele kui ka kasutajatoele. Praktika ja ka võimaliku hilisema töö saab ühildada TalTechis õppimisega.<br><br>Kontaktinfo: Lauri Anton, <a target='_blank' href='mailto:lauri.anton@taltech.ee'>lauri.anton@taltech.ee</a> "
         }
     }
     
