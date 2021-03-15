@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "description": "Praktikakohvik2021",
-  "author": "Germo Linder",
+  "author": "Germo Linder <germo.linder@gmail.com>",
   "keywords": [
     "gatsby"
   ],
+  "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",

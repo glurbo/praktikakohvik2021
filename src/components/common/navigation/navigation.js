@@ -3,7 +3,6 @@ import Scrollspy from "react-scrollspy"
 import { Menu, X } from "react-feather"
 import { Container } from "../../global"
 import { FormattedMessage, useIntl, Link } from "gatsby-plugin-intl"
-//import { Link } from 'gatsby'
 import Language from "../../language"
 import {
   Nav,

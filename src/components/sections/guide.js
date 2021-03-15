@@ -1,8 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import { Container } from "../global"
-import content from "../content"
-import parse from 'html-react-parser'
 import {graphql, useStaticQuery} from "gatsby";
 import { FormattedMessage } from "gatsby-plugin-intl"
 

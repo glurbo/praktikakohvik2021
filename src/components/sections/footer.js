@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import { Container, Row, Col } from "react-bootstrap"
-//import { Container } from "../global"
 import {graphql, useStaticQuery} from "gatsby";
 import { Link } from 'gatsby'
 
