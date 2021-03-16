@@ -2,8 +2,6 @@ import React from "react"
 import styled from "styled-components"
 import QuestionsSvg from "../../images/svg/questions.svg"
 import { Section, Container, TextGroup } from "../global"
-import content from "../content"
-import parse from 'html-react-parser'
 import { FormattedMessage } from "gatsby-plugin-intl"
 
 const Questions = () => (

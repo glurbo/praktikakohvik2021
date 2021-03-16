@@ -86,11 +86,7 @@ const Companies = () => {
 
 export default Companies
 
-const Div = styled.div`
-  margin: auto;
-  padding-top: 20px;
-  font-weight: 400;
-`
+
 
 const Title = styled.h1`
   text-align: center;

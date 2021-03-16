@@ -47,7 +47,7 @@ const GlobalStyles = createGlobalStyle`
   p {
     ${props => props.theme.font_size.small};
     line-height: 22px;
-
+    text-align: justify;
   }
 
   a:visited { text-decoration: none; }
