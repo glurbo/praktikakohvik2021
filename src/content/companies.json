@@ -44,6 +44,12 @@
     },
     {
         "company": {
+            "name": "Fujitsu Estonia",
+            "about": "Tulge praktikakohvikule, et selle firmaga lähemalt tutvuda."
+        }
+    },
+    {
+        "company": {
             "name": "Handies",
             "about": "Handies is an environment that offers people the opportunity to earn extra money with their skills or even start a small business. Handies' role is to encourage people to be enterprising and to see ways to earn a living with the skills they already have.<br><br><b>Is Handies like Bolt?</b><br>It is good to compare Handies mobile app with the flagships in the sharing economy like Bolt and Uber. It brings together, on a location-by-location basis, customers and service providers, ie those who are looking for helpers in various small jobs and those who are experts in certain fields (construction, repair, mechanics, landscaping, gardening, cleaning, consulting, etc.). For the service provider, this is a fast, convenient and secure solution. The work is done on an hourly basis and payment is made through the application.<br><br><b>The sharing economy is the future</b><br>Why Handies? All trends show that the world is moving more and more towards a sharing economy, and Estonia is at the forefront of promoting this way of thinking, from Bolt to Handies. The younger generation does not own cars, kitchens or tools, which in the general picture is not a reasonable fixed cost for individuals or households. Society is becoming more needs-based and the worker is being ordered home instead of doing the repairment himself. Therefore, we also want to meet this growing demand with our Handies platform.<br><br><b>Who are we looking for?</b><br>We are looking for developers with React or React Native skills who already have previous internships or working experience (not crucial). It is useful if the developer has also dealt with the Expo framework.<br><br>If necessary and suitable, we can also offer topics for graduation theses and a longer contract after the internship."
         }
